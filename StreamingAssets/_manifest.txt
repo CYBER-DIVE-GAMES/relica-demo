@@ -58,6 +58,9 @@ maps/ruins_hall.json
 maps/ruins_hall.png
 maps/ruins_wind.json
 maps/ruins_wind.png
+maps/ruins_wind_s1.png
+maps/ruins_wind_s2.png
+maps/ruins_wind_s3.png
 maps/town.json
 maps/town.png
 maps/town_3d.json

@@ -129,7 +129,7 @@
 
   var config = {
     arguments: [],
-    dataUrl: "Build/558d2d7ede7686d1543d387a693aec73.data.unityweb",
+    dataUrl: "Build/99d88270fbdafd56af695328e7bc69ad.data.unityweb",
     frameworkUrl: "Build/d82b81b9a3df22927769ec5f94eb85a1.framework.js.unityweb",
     codeUrl: "Build/45dfb084fb7aaf9c5e17c5f9f19409ae.wasm.unityweb",
     streamingAssetsUrl: "StreamingAssets",
@@ -145,7 +145,7 @@
   s.src = "Build/df17cadf542a0515124ce49401b2e243.loader.js";
   s.onload = function () {
     createUnityInstance(canvas, config, function (p) { document.getElementById('fill').style.width = (100 * p) + '%'; })
-      .then(function () { document.getElementById("loading").style.display = 'none'; })
+      .then(function () { document.getElementById('loading').style.display = 'none'; })
       .catch(function (m) { document.getElementById('note').textContent = '起動できませんでした: ' + m; });
   };
   document.body.appendChild(s);
