@@ -44,6 +44,7 @@ maps/mine_drain.png
 maps/mine_layout.png
 maps/mine_lower.json
 maps/mine_lower.png
+maps/mine_open.png
 maps/river.json
 maps/river.png
 maps/river_backwater.json
