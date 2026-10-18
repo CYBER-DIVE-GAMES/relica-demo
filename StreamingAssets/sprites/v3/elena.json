@@ -1,0 +1,122 @@
+{
+"key": "elena",
+"name": "エレナ",
+"status": "design",
+"facing": "front",
+"textures": [
+{
+"file": "tex/elena-pixel-v3.png",
+"ppu": 242.59
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "立ち姿・瞬きの確認用。動作の細部は調整中。",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "design",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 308,
+"h": 520,
+"px": 206,
+"py": 519,
+"ms": 4000
+},
+{
+"t": 0,
+"x": 310,
+"y": 0,
+"w": 306,
+"h": 519,
+"px": 203,
+"py": 518,
+"ms": 110
+},
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 308,
+"h": 520,
+"px": 206,
+"py": 519,
+"ms": 800
+}
+]
+},
+{
+"name": "talk",
+"label": "会話ポーズの確認用。滑らかな中割り・全方向動作は未完成。",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "design",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 308,
+"h": 520,
+"px": 206,
+"py": 519,
+"ms": 300
+},
+{
+"t": 0,
+"x": 618,
+"y": 0,
+"w": 308,
+"h": 513,
+"px": 207,
+"py": 512,
+"ms": 230
+},
+{
+"t": 0,
+"x": 928,
+"y": 0,
+"w": 399,
+"h": 513,
+"px": 216,
+"py": 512,
+"ms": 450
+},
+{
+"t": 0,
+"x": 618,
+"y": 0,
+"w": 308,
+"h": 513,
+"px": 207,
+"py": 512,
+"ms": 230
+},
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 308,
+"h": 520,
+"px": 206,
+"py": 519,
+"ms": 350
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v1/elena-pixel-v3.png"
+],
+"notes": [
+"motion-v1 four-pose design study (idle/talk only)"
+]
+}

@@ -1,0 +1,334 @@
+{
+"key": "enemy_39",
+"name": "スコルピオンスネーク",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-39-scorpion-snake-combat-v2.png",
+"ppu": 243.33
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 210,
+"h": 206,
+"px": 121,
+"py": 206,
+"ms": 200
+},
+{
+"t": 0,
+"x": 212,
+"y": 0,
+"w": 207,
+"h": 221,
+"px": 113,
+"py": 220,
+"ms": 200
+},
+{
+"t": 0,
+"x": 421,
+"y": 0,
+"w": 212,
+"h": 205,
+"px": 124,
+"py": 205,
+"ms": 200
+},
+{
+"t": 0,
+"x": 635,
+"y": 0,
+"w": 212,
+"h": 205,
+"px": 128,
+"py": 205,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "巻き付き",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 849,
+"y": 0,
+"w": 218,
+"h": 215,
+"px": 129,
+"py": 214,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1069,
+"y": 0,
+"w": 199,
+"h": 193,
+"px": 113,
+"py": 214,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1270,
+"y": 0,
+"w": 202,
+"h": 216,
+"px": 129,
+"py": 222,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1474,
+"y": 0,
+"w": 219,
+"h": 214,
+"px": 138,
+"py": 213,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "毒牙",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1695,
+"y": 0,
+"w": 219,
+"h": 227,
+"px": 132,
+"py": 226,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 229,
+"w": 243,
+"h": 176,
+"px": 141,
+"py": 181,
+"ms": 160
+},
+{
+"t": 0,
+"x": 245,
+"y": 229,
+"w": 241,
+"h": 172,
+"px": 137,
+"py": 184,
+"ms": 160
+},
+{
+"t": 0,
+"x": 488,
+"y": 229,
+"w": 213,
+"h": 220,
+"px": 136,
+"py": 221,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "尾針",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 703,
+"y": 229,
+"w": 218,
+"h": 205,
+"px": 123,
+"py": 204,
+"ms": 160
+},
+{
+"t": 0,
+"x": 923,
+"y": 229,
+"w": 215,
+"h": 178,
+"px": 111,
+"py": 178,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1140,
+"y": 229,
+"w": 216,
+"h": 176,
+"px": 111,
+"py": 176,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1358,
+"y": 229,
+"w": 217,
+"h": 213,
+"px": 126,
+"py": 213,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1577,
+"y": 229,
+"w": 218,
+"h": 212,
+"px": 130,
+"py": 219,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1797,
+"y": 229,
+"w": 226,
+"h": 221,
+"px": 130,
+"py": 225,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 452,
+"w": 220,
+"h": 210,
+"px": 129,
+"py": 213,
+"ms": 160
+},
+{
+"t": 0,
+"x": 222,
+"y": 452,
+"w": 220,
+"h": 219,
+"px": 141,
+"py": 218,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 444,
+"y": 452,
+"w": 226,
+"h": 205,
+"px": 129,
+"py": 204,
+"ms": 260
+},
+{
+"t": 0,
+"x": 672,
+"y": 452,
+"w": 234,
+"h": 179,
+"px": 123,
+"py": 178,
+"ms": 260
+},
+{
+"t": 0,
+"x": 908,
+"y": 452,
+"w": 229,
+"h": 139,
+"px": 134,
+"py": 138,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1139,
+"y": 452,
+"w": 228,
+"h": 108,
+"px": 139,
+"py": 123,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-39-scorpion-snake-combat-v2.png"
+],
+"notes": [
+"skill row labels from registry skillsSourceText (not validated)"
+],
+"drafts": [
+{
+"source": "enemy-39-scorpion-snake-combat-v2",
+"cutIssues": [],
+"edgeTouch": [],
+"progressIssues": []
+}
+]
+}

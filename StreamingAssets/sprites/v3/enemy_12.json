@@ -1,0 +1,345 @@
+{
+"key": "enemy_12",
+"name": "ゴブリン（槍）",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-12-goblin-spear-combat-v1.png",
+"ppu": 220.0
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 198,
+"h": 200,
+"px": 155,
+"py": 200,
+"ms": 200
+},
+{
+"t": 0,
+"x": 200,
+"y": 0,
+"w": 200,
+"h": 192,
+"px": 141,
+"py": 193,
+"ms": 200
+},
+{
+"t": 0,
+"x": 402,
+"y": 0,
+"w": 200,
+"h": 193,
+"px": 168,
+"py": 193,
+"ms": 200
+},
+{
+"t": 0,
+"x": 604,
+"y": 0,
+"w": 215,
+"h": 190,
+"px": 171,
+"py": 189,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "槍突き",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 821,
+"y": 0,
+"w": 215,
+"h": 167,
+"px": 122,
+"py": 166,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1038,
+"y": 0,
+"w": 251,
+"h": 159,
+"px": 125,
+"py": 158,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1291,
+"y": 0,
+"w": 258,
+"h": 159,
+"px": 143,
+"py": 158,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1551,
+"y": 0,
+"w": 213,
+"h": 168,
+"px": 143,
+"py": 167,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "足払い",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1766,
+"y": 0,
+"w": 198,
+"h": 146,
+"px": 104,
+"py": 145,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 202,
+"w": 247,
+"h": 137,
+"px": 116,
+"py": 136,
+"ms": 160
+},
+{
+"t": 0,
+"x": 249,
+"y": 202,
+"w": 254,
+"h": 133,
+"px": 121,
+"py": 132,
+"ms": 160
+},
+{
+"t": 0,
+"x": 505,
+"y": 202,
+"w": 177,
+"h": 143,
+"px": 83,
+"py": 142,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "構え",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 684,
+"y": 202,
+"w": 215,
+"h": 201,
+"px": 116,
+"py": 204,
+"ms": 160
+},
+{
+"t": 0,
+"x": 901,
+"y": 202,
+"w": 206,
+"h": 200,
+"px": 94,
+"py": 199,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1109,
+"y": 202,
+"w": 232,
+"h": 167,
+"px": 125,
+"py": 170,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1343,
+"y": 202,
+"w": 201,
+"h": 202,
+"px": 103,
+"py": 202,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1546,
+"y": 202,
+"w": 224,
+"h": 188,
+"px": 172,
+"py": 192,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1772,
+"y": 202,
+"w": 153,
+"h": 170,
+"px": 110,
+"py": 172,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 406,
+"w": 165,
+"h": 157,
+"px": 128,
+"py": 156,
+"ms": 160
+},
+{
+"t": 0,
+"x": 167,
+"y": 406,
+"w": 200,
+"h": 190,
+"px": 172,
+"py": 189,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 369,
+"y": 406,
+"w": 185,
+"h": 135,
+"px": 151,
+"py": 141,
+"ms": 260
+},
+{
+"t": 0,
+"x": 556,
+"y": 406,
+"w": 267,
+"h": 126,
+"px": 187,
+"py": 127,
+"ms": 260
+},
+{
+"t": 0,
+"x": 825,
+"y": 406,
+"w": 258,
+"h": 91,
+"px": 189,
+"py": 92,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1085,
+"y": 406,
+"w": 235,
+"h": 82,
+"px": 189,
+"py": 81,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-12-goblin-spear-combat-v1.png"
+],
+"notes": [
+"skill row labels from registry skillsSourceText (not validated)"
+],
+"drafts": [
+{
+"source": "enemy-12-goblin-spear-combat-v1",
+"cutIssues": [
+"x2",
+"x3"
+],
+"edgeTouch": [
+"r2c2",
+"r2c3",
+"r2c4",
+"r3c3",
+"r6c2",
+"r6c3",
+"r6c4"
+],
+"progressIssues": []
+}
+]
+}

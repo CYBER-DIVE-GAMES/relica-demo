@@ -1,0 +1,334 @@
+{
+"key": "enemy_41",
+"name": "トレントスプラウト",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-41-treant-sprout-combat-v1.png",
+"ppu": 240.0
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 178,
+"h": 215,
+"px": 101,
+"py": 214,
+"ms": 200
+},
+{
+"t": 0,
+"x": 180,
+"y": 0,
+"w": 179,
+"h": 217,
+"px": 99,
+"py": 216,
+"ms": 200
+},
+{
+"t": 0,
+"x": 361,
+"y": 0,
+"w": 174,
+"h": 218,
+"px": 104,
+"py": 217,
+"ms": 200
+},
+{
+"t": 0,
+"x": 537,
+"y": 0,
+"w": 178,
+"h": 218,
+"px": 115,
+"py": 217,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "枝打ち",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 717,
+"y": 0,
+"w": 197,
+"h": 216,
+"px": 120,
+"py": 215,
+"ms": 160
+},
+{
+"t": 0,
+"x": 916,
+"y": 0,
+"w": 230,
+"h": 214,
+"px": 117,
+"py": 214,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1148,
+"y": 0,
+"w": 243,
+"h": 215,
+"px": 131,
+"py": 214,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1393,
+"y": 0,
+"w": 201,
+"h": 211,
+"px": 130,
+"py": 211,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "根縛り",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1596,
+"y": 0,
+"w": 199,
+"h": 216,
+"px": 121,
+"py": 220,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1797,
+"y": 0,
+"w": 227,
+"h": 221,
+"px": 123,
+"py": 220,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 223,
+"w": 227,
+"h": 228,
+"px": 132,
+"py": 230,
+"ms": 160
+},
+{
+"t": 0,
+"x": 229,
+"y": 223,
+"w": 209,
+"h": 228,
+"px": 128,
+"py": 230,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "光合成\\",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 440,
+"y": 223,
+"w": 211,
+"h": 213,
+"px": 123,
+"py": 219,
+"ms": 160
+},
+{
+"t": 0,
+"x": 653,
+"y": 223,
+"w": 222,
+"h": 228,
+"px": 114,
+"py": 234,
+"ms": 160
+},
+{
+"t": 0,
+"x": 877,
+"y": 223,
+"w": 222,
+"h": 238,
+"px": 123,
+"py": 244,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1101,
+"y": 223,
+"w": 199,
+"h": 232,
+"px": 120,
+"py": 231,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1302,
+"y": 223,
+"w": 186,
+"h": 221,
+"px": 110,
+"py": 225,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1490,
+"y": 223,
+"w": 200,
+"h": 214,
+"px": 110,
+"py": 217,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1692,
+"y": 223,
+"w": 220,
+"h": 218,
+"px": 135,
+"py": 222,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 463,
+"w": 201,
+"h": 190,
+"px": 130,
+"py": 189,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 203,
+"y": 463,
+"w": 179,
+"h": 204,
+"px": 149,
+"py": 203,
+"ms": 260
+},
+{
+"t": 0,
+"x": 384,
+"y": 463,
+"w": 218,
+"h": 189,
+"px": 162,
+"py": 201,
+"ms": 260
+},
+{
+"t": 0,
+"x": 604,
+"y": 463,
+"w": 229,
+"h": 140,
+"px": 179,
+"py": 152,
+"ms": 260
+},
+{
+"t": 0,
+"x": 835,
+"y": 463,
+"w": 233,
+"h": 123,
+"px": 185,
+"py": 139,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-41-treant-sprout-combat-v1.png"
+],
+"notes": [
+"skill row labels from registry skillsSourceText (not validated)"
+],
+"drafts": [
+{
+"source": "enemy-41-treant-sprout-combat-v1",
+"cutIssues": [],
+"edgeTouch": [],
+"progressIssues": []
+}
+]
+}

@@ -1,0 +1,334 @@
+{
+"key": "enemy_58",
+"name": "データゴースト",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-58-data-ghost-combat-v1.png",
+"ppu": 260.0
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 119,
+"h": 233,
+"px": 62,
+"py": 232,
+"ms": 200
+},
+{
+"t": 0,
+"x": 121,
+"y": 0,
+"w": 120,
+"h": 236,
+"px": 48,
+"py": 235,
+"ms": 200
+},
+{
+"t": 0,
+"x": 243,
+"y": 0,
+"w": 136,
+"h": 228,
+"px": 78,
+"py": 227,
+"ms": 200
+},
+{
+"t": 0,
+"x": 381,
+"y": 0,
+"w": 125,
+"h": 232,
+"px": 91,
+"py": 231,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "データ刃",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 508,
+"y": 0,
+"w": 129,
+"h": 230,
+"px": 59,
+"py": 229,
+"ms": 160
+},
+{
+"t": 0,
+"x": 639,
+"y": 0,
+"w": 230,
+"h": 227,
+"px": 96,
+"py": 226,
+"ms": 160
+},
+{
+"t": 0,
+"x": 871,
+"y": 0,
+"w": 238,
+"h": 214,
+"px": 106,
+"py": 213,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1111,
+"y": 0,
+"w": 124,
+"h": 230,
+"px": 72,
+"py": 229,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "Player",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1237,
+"y": 0,
+"w": 169,
+"h": 231,
+"px": 99,
+"py": 230,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1408,
+"y": 0,
+"w": 257,
+"h": 231,
+"px": 127,
+"py": 230,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1667,
+"y": 0,
+"w": 241,
+"h": 232,
+"px": 125,
+"py": 231,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 238,
+"w": 141,
+"h": 231,
+"px": 110,
+"py": 230,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "崩壊\\",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 143,
+"y": 238,
+"w": 161,
+"h": 202,
+"px": 77,
+"py": 201,
+"ms": 160
+},
+{
+"t": 0,
+"x": 306,
+"y": 238,
+"w": 196,
+"h": 235,
+"px": 105,
+"py": 234,
+"ms": 160
+},
+{
+"t": 0,
+"x": 504,
+"y": 238,
+"w": 236,
+"h": 235,
+"px": 125,
+"py": 234,
+"ms": 160
+},
+{
+"t": 0,
+"x": 742,
+"y": 238,
+"w": 141,
+"h": 231,
+"px": 98,
+"py": 230,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 885,
+"y": 238,
+"w": 140,
+"h": 233,
+"px": 88,
+"py": 232,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1027,
+"y": 238,
+"w": 151,
+"h": 203,
+"px": 65,
+"py": 202,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1180,
+"y": 238,
+"w": 167,
+"h": 191,
+"px": 93,
+"py": 190,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1349,
+"y": 238,
+"w": 133,
+"h": 233,
+"px": 106,
+"py": 232,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1484,
+"y": 238,
+"w": 163,
+"h": 206,
+"px": 62,
+"py": 205,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1649,
+"y": 238,
+"w": 161,
+"h": 157,
+"px": 52,
+"py": 156,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1812,
+"y": 238,
+"w": 236,
+"h": 95,
+"px": 111,
+"py": 94,
+"ms": 260
+},
+{
+"t": 0,
+"x": 0,
+"y": 475,
+"w": 191,
+"h": 95,
+"px": 103,
+"py": 94,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-58-data-ghost-combat-v1.png"
+],
+"notes": [
+"skill row labels from registry skillsSourceText (not validated)"
+],
+"drafts": [
+{
+"source": "enemy-58-data-ghost-combat-v1",
+"cutIssues": [],
+"edgeTouch": [],
+"progressIssues": []
+}
+]
+}

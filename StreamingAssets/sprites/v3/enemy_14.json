@@ -1,0 +1,341 @@
+{
+"key": "enemy_14",
+"name": "コボルト",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-14-kobold-combat-v2.png",
+"ppu": 218.89
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 205,
+"h": 199,
+"px": 143,
+"py": 198,
+"ms": 200
+},
+{
+"t": 0,
+"x": 207,
+"y": 0,
+"w": 210,
+"h": 198,
+"px": 149,
+"py": 197,
+"ms": 200
+},
+{
+"t": 0,
+"x": 419,
+"y": 0,
+"w": 224,
+"h": 191,
+"px": 157,
+"py": 190,
+"ms": 200
+},
+{
+"t": 0,
+"x": 645,
+"y": 0,
+"w": 210,
+"h": 191,
+"px": 151,
+"py": 190,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "連爪",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 857,
+"y": 0,
+"w": 225,
+"h": 200,
+"px": 162,
+"py": 199,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1084,
+"y": 0,
+"w": 220,
+"h": 187,
+"px": 160,
+"py": 189,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1306,
+"y": 0,
+"w": 212,
+"h": 200,
+"px": 160,
+"py": 199,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1520,
+"y": 0,
+"w": 214,
+"h": 186,
+"px": 168,
+"py": 185,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "盗み打ち",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1736,
+"y": 0,
+"w": 199,
+"h": 193,
+"px": 133,
+"py": 192,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 202,
+"w": 251,
+"h": 163,
+"px": 156,
+"py": 162,
+"ms": 160
+},
+{
+"t": 0,
+"x": 253,
+"y": 202,
+"w": 243,
+"h": 182,
+"px": 162,
+"py": 181,
+"ms": 160
+},
+{
+"t": 0,
+"x": 498,
+"y": 202,
+"w": 203,
+"h": 188,
+"px": 133,
+"py": 187,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "俊足",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 703,
+"y": 202,
+"w": 191,
+"h": 201,
+"px": 130,
+"py": 200,
+"ms": 160
+},
+{
+"t": 0,
+"x": 896,
+"y": 202,
+"w": 196,
+"h": 183,
+"px": 142,
+"py": 182,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1094,
+"y": 202,
+"w": 196,
+"h": 178,
+"px": 152,
+"py": 182,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1292,
+"y": 202,
+"w": 201,
+"h": 184,
+"px": 152,
+"py": 186,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1495,
+"y": 202,
+"w": 215,
+"h": 202,
+"px": 150,
+"py": 201,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1712,
+"y": 202,
+"w": 201,
+"h": 189,
+"px": 153,
+"py": 188,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 406,
+"w": 204,
+"h": 192,
+"px": 154,
+"py": 191,
+"ms": 160
+},
+{
+"t": 0,
+"x": 206,
+"y": 406,
+"w": 210,
+"h": 196,
+"px": 162,
+"py": 196,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 418,
+"y": 406,
+"w": 216,
+"h": 190,
+"px": 149,
+"py": 189,
+"ms": 260
+},
+{
+"t": 0,
+"x": 636,
+"y": 406,
+"w": 240,
+"h": 137,
+"px": 165,
+"py": 143,
+"ms": 260
+},
+{
+"t": 0,
+"x": 878,
+"y": 406,
+"w": 241,
+"h": 112,
+"px": 182,
+"py": 114,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1121,
+"y": 406,
+"w": 235,
+"h": 99,
+"px": 172,
+"py": 98,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-14-kobold-combat-v2.png"
+],
+"notes": [
+"skill row labels from registry skillsSourceText (not validated)"
+],
+"drafts": [
+{
+"source": "enemy-14-kobold-combat-v2",
+"cutIssues": [
+"x2"
+],
+"edgeTouch": [
+"r3c2",
+"r3c3",
+"r6c2",
+"r6c3"
+],
+"progressIssues": []
+}
+]
+}

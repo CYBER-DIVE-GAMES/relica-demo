@@ -1,0 +1,122 @@
+{
+"key": "dan",
+"name": "ダン",
+"status": "design",
+"facing": "front",
+"textures": [
+{
+"file": "tex/dan-pixel-v1.png",
+"ppu": 249.06
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "立ち姿・瞬きの確認用。動作の細部は調整中。",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "design",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 263,
+"h": 526,
+"px": 156,
+"py": 525,
+"ms": 4150
+},
+{
+"t": 0,
+"x": 265,
+"y": 0,
+"w": 262,
+"h": 526,
+"px": 156,
+"py": 525,
+"ms": 110
+},
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 263,
+"h": 526,
+"px": 156,
+"py": 525,
+"ms": 800
+}
+]
+},
+{
+"name": "talk",
+"label": "会話ポーズの確認用。滑らかな中割り・全方向動作は未完成。",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "design",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 263,
+"h": 526,
+"px": 156,
+"py": 525,
+"ms": 300
+},
+{
+"t": 0,
+"x": 529,
+"y": 0,
+"w": 248,
+"h": 522,
+"px": 141,
+"py": 521,
+"ms": 230
+},
+{
+"t": 0,
+"x": 779,
+"y": 0,
+"w": 344,
+"h": 522,
+"px": 141,
+"py": 521,
+"ms": 450
+},
+{
+"t": 0,
+"x": 529,
+"y": 0,
+"w": 248,
+"h": 522,
+"px": 141,
+"py": 521,
+"ms": 230
+},
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 263,
+"h": 526,
+"px": 156,
+"py": 525,
+"ms": 350
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v1/dan-pixel-v1.png"
+],
+"notes": [
+"motion-v1 four-pose design study (idle/talk only)"
+]
+}

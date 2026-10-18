@@ -1,0 +1,334 @@
+{
+"key": "enemy_38",
+"name": "ロックマンティス",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-38-rock-mantis-combat-v1.png",
+"ppu": 223.33
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 200,
+"h": 202,
+"px": 104,
+"py": 201,
+"ms": 200
+},
+{
+"t": 0,
+"x": 202,
+"y": 0,
+"w": 198,
+"h": 200,
+"px": 99,
+"py": 199,
+"ms": 200
+},
+{
+"t": 0,
+"x": 402,
+"y": 0,
+"w": 200,
+"h": 194,
+"px": 101,
+"py": 194,
+"ms": 200
+},
+{
+"t": 0,
+"x": 604,
+"y": 0,
+"w": 206,
+"h": 203,
+"px": 117,
+"py": 203,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "鎌斬",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 812,
+"y": 0,
+"w": 184,
+"h": 226,
+"px": 154,
+"py": 233,
+"ms": 160
+},
+{
+"t": 0,
+"x": 998,
+"y": 0,
+"w": 207,
+"h": 220,
+"px": 157,
+"py": 219,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1207,
+"y": 0,
+"w": 253,
+"h": 170,
+"px": 176,
+"py": 174,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1462,
+"y": 0,
+"w": 189,
+"h": 208,
+"px": 151,
+"py": 209,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "岩鎌",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1653,
+"y": 0,
+"w": 181,
+"h": 254,
+"px": 158,
+"py": 257,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1836,
+"y": 0,
+"w": 185,
+"h": 237,
+"px": 147,
+"py": 240,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 256,
+"w": 208,
+"h": 170,
+"px": 177,
+"py": 169,
+"ms": 160
+},
+{
+"t": 0,
+"x": 210,
+"y": 256,
+"w": 198,
+"h": 221,
+"px": 178,
+"py": 232,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "擬態\\",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 410,
+"y": 256,
+"w": 202,
+"h": 214,
+"px": 103,
+"py": 217,
+"ms": 160
+},
+{
+"t": 0,
+"x": 614,
+"y": 256,
+"w": 218,
+"h": 220,
+"px": 105,
+"py": 220,
+"ms": 160
+},
+{
+"t": 0,
+"x": 834,
+"y": 256,
+"w": 239,
+"h": 207,
+"px": 115,
+"py": 206,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1075,
+"y": 256,
+"w": 205,
+"h": 220,
+"px": 112,
+"py": 219,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1282,
+"y": 256,
+"w": 195,
+"h": 219,
+"px": 148,
+"py": 224,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1479,
+"y": 256,
+"w": 230,
+"h": 232,
+"px": 157,
+"py": 232,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1711,
+"y": 256,
+"w": 225,
+"h": 199,
+"px": 146,
+"py": 198,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 490,
+"w": 208,
+"h": 217,
+"px": 157,
+"py": 227,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 210,
+"y": 490,
+"w": 210,
+"h": 166,
+"px": 111,
+"py": 173,
+"ms": 260
+},
+{
+"t": 0,
+"x": 422,
+"y": 490,
+"w": 223,
+"h": 165,
+"px": 119,
+"py": 164,
+"ms": 260
+},
+{
+"t": 0,
+"x": 647,
+"y": 490,
+"w": 251,
+"h": 116,
+"px": 129,
+"py": 123,
+"ms": 260
+},
+{
+"t": 0,
+"x": 900,
+"y": 490,
+"w": 235,
+"h": 89,
+"px": 131,
+"py": 99,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-38-rock-mantis-combat-v1.png"
+],
+"notes": [
+"skill row labels from registry skillsSourceText (not validated)"
+],
+"drafts": [
+{
+"source": "enemy-38-rock-mantis-combat-v1",
+"cutIssues": [],
+"edgeTouch": [],
+"progressIssues": []
+}
+]
+}

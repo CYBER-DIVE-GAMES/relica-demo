@@ -1,0 +1,326 @@
+{
+"key": "boss_05_varum_core",
+"name": "監獄守護機ヴァルム（コア露出）",
+"status": "candidate",
+"facing": "left",
+"textures": [
+{
+"file": "tex/boss-05-core-exposed-combat-v2.png",
+"ppu": 192.0
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "コア露出・待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "candidate",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 314,
+"h": 210,
+"px": 159,
+"py": 205,
+"ms": 240
+},
+{
+"t": 0,
+"x": 314,
+"y": 0,
+"w": 312,
+"h": 210,
+"px": 153,
+"py": 205,
+"ms": 200
+},
+{
+"t": 0,
+"x": 626,
+"y": 0,
+"w": 317,
+"h": 210,
+"px": 151,
+"py": 205,
+"ms": 240
+},
+{
+"t": 0,
+"x": 943,
+"y": 0,
+"w": 311,
+"h": 210,
+"px": 149,
+"py": 205,
+"ms": 200
+}
+]
+},
+{
+"name": "iron_arm_slam",
+"label": "鉄腕叩き",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "candidate",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 210,
+"w": 314,
+"h": 226,
+"px": 168,
+"py": 203,
+"ms": 240
+},
+{
+"t": 0,
+"x": 314,
+"y": 210,
+"w": 312,
+"h": 226,
+"px": 157,
+"py": 203,
+"ms": 180
+},
+{
+"t": 0,
+"x": 626,
+"y": 210,
+"w": 317,
+"h": 226,
+"px": 158,
+"py": 203,
+"ms": 100
+},
+{
+"t": 0,
+"x": 943,
+"y": 210,
+"w": 311,
+"h": 226,
+"px": 155,
+"py": 203,
+"ms": 260
+}
+]
+},
+{
+"name": "core_charge",
+"label": "コアチャージ",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "candidate",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 436,
+"w": 314,
+"h": 195,
+"px": 160,
+"py": 183,
+"ms": 200
+},
+{
+"t": 0,
+"x": 314,
+"y": 436,
+"w": 312,
+"h": 195,
+"px": 154,
+"py": 183,
+"ms": 220
+},
+{
+"t": 0,
+"x": 626,
+"y": 436,
+"w": 317,
+"h": 195,
+"px": 151,
+"py": 183,
+"ms": 260
+},
+{
+"t": 0,
+"x": 943,
+"y": 436,
+"w": 311,
+"h": 195,
+"px": 150,
+"py": 183,
+"ms": 300
+}
+]
+},
+{
+"name": "core_cannon",
+"label": "コア砲",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "candidate",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 631,
+"w": 314,
+"h": 186,
+"px": 169,
+"py": 176,
+"ms": 240
+},
+{
+"t": 0,
+"x": 314,
+"y": 631,
+"w": 312,
+"h": 186,
+"px": 159,
+"py": 176,
+"ms": 140
+},
+{
+"t": 0,
+"x": 626,
+"y": 631,
+"w": 317,
+"h": 186,
+"px": 157,
+"py": 176,
+"ms": 180
+},
+{
+"t": 0,
+"x": 943,
+"y": 631,
+"w": 311,
+"h": 186,
+"px": 160,
+"py": 176,
+"ms": 260
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "candidate",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 817,
+"w": 314,
+"h": 205,
+"px": 163,
+"py": 191,
+"ms": 100
+},
+{
+"t": 0,
+"x": 314,
+"y": 817,
+"w": 312,
+"h": 205,
+"px": 172,
+"py": 191,
+"ms": 140
+},
+{
+"t": 0,
+"x": 626,
+"y": 817,
+"w": 317,
+"h": 205,
+"px": 154,
+"py": 191,
+"ms": 180
+},
+{
+"t": 0,
+"x": 943,
+"y": 817,
+"w": 311,
+"h": 205,
+"px": 153,
+"py": 191,
+"ms": 260
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "candidate",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 1022,
+"w": 314,
+"h": 232,
+"px": 157,
+"py": 190,
+"ms": 220
+},
+{
+"t": 0,
+"x": 314,
+"y": 1022,
+"w": 312,
+"h": 232,
+"px": 154,
+"py": 190,
+"ms": 260
+},
+{
+"t": 0,
+"x": 626,
+"y": 1022,
+"w": 317,
+"h": 232,
+"px": 157,
+"py": 190,
+"ms": 320
+},
+{
+"t": 0,
+"x": 943,
+"y": 1022,
+"w": 311,
+"h": 232,
+"px": 150,
+"py": 190,
+"ms": 480
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/prepared/boss-05-core-exposed-combat-v2"
+],
+"notes": [
+"older brighter palette than navy transition/release sheets; consistency repair pending"
+]
+}

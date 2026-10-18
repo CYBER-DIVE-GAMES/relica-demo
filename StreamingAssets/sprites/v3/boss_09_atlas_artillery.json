@@ -1,0 +1,354 @@
+{
+"key": "boss_09_atlas_artillery",
+"name": "天空機兵アトラス（砲撃）",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/boss-09-artillery-combat-v1.png",
+"ppu": 88.57
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 356,
+"h": 155,
+"px": 227,
+"py": 154,
+"ms": 200
+},
+{
+"t": 0,
+"x": 358,
+"y": 0,
+"w": 346,
+"h": 155,
+"px": 225,
+"py": 154,
+"ms": 200
+},
+{
+"t": 0,
+"x": 706,
+"y": 0,
+"w": 389,
+"h": 156,
+"px": 260,
+"py": 155,
+"ms": 200
+},
+{
+"t": 0,
+"x": 1097,
+"y": 0,
+"w": 345,
+"h": 157,
+"px": 242,
+"py": 156,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "拡散砲撃",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1444,
+"y": 0,
+"w": 339,
+"h": 159,
+"px": 206,
+"py": 158,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 161,
+"w": 334,
+"h": 157,
+"px": 210,
+"py": 156,
+"ms": 160
+},
+{
+"t": 0,
+"x": 336,
+"y": 161,
+"w": 394,
+"h": 151,
+"px": 257,
+"py": 150,
+"ms": 160
+},
+{
+"t": 0,
+"x": 732,
+"y": 161,
+"w": 334,
+"h": 152,
+"px": 223,
+"py": 151,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "地上砲",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1068,
+"y": 161,
+"w": 371,
+"h": 156,
+"px": 232,
+"py": 155,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1441,
+"y": 161,
+"w": 363,
+"h": 158,
+"px": 232,
+"py": 157,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 321,
+"w": 396,
+"h": 150,
+"px": 250,
+"py": 149,
+"ms": 160
+},
+{
+"t": 0,
+"x": 398,
+"y": 321,
+"w": 348,
+"h": 156,
+"px": 234,
+"py": 155,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "エネルギービーム",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 748,
+"y": 321,
+"w": 326,
+"h": 151,
+"px": 207,
+"py": 152,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1076,
+"y": 321,
+"w": 340,
+"h": 154,
+"px": 222,
+"py": 155,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1418,
+"y": 321,
+"w": 327,
+"h": 157,
+"px": 204,
+"py": 157,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 480,
+"w": 337,
+"h": 156,
+"px": 236,
+"py": 155,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 339,
+"y": 480,
+"w": 331,
+"h": 151,
+"px": 216,
+"py": 152,
+"ms": 160
+},
+{
+"t": 0,
+"x": 672,
+"y": 480,
+"w": 327,
+"h": 149,
+"px": 211,
+"py": 150,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1001,
+"y": 480,
+"w": 325,
+"h": 150,
+"px": 223,
+"py": 149,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1328,
+"y": 480,
+"w": 337,
+"h": 141,
+"px": 236,
+"py": 140,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1667,
+"y": 480,
+"w": 333,
+"h": 138,
+"px": 215,
+"py": 137,
+"ms": 260
+},
+{
+"t": 0,
+"x": 0,
+"y": 638,
+"w": 324,
+"h": 124,
+"px": 222,
+"py": 123,
+"ms": 260
+},
+{
+"t": 0,
+"x": 326,
+"y": 638,
+"w": 371,
+"h": 117,
+"px": 240,
+"py": 116,
+"ms": 260
+},
+{
+"t": 0,
+"x": 699,
+"y": 638,
+"w": 365,
+"h": 103,
+"px": 240,
+"py": 103,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/boss-09-artillery-combat-v1.png"
+],
+"notes": [],
+"drafts": [
+{
+"source": "boss-09-artillery-combat-v1",
+"cutIssues": [
+"x2"
+],
+"edgeTouch": [
+"r1c1",
+"r1c2",
+"r1c3",
+"r1c4",
+"r2c1",
+"r2c2",
+"r2c3",
+"r2c4",
+"r3c1",
+"r3c2",
+"r3c3",
+"r3c4",
+"r4c4",
+"r5c3",
+"r5c4"
+],
+"progressIssues": [
+"Individual frame, anchor, continuity and source-board fidelity review required before delivery.",
+"Standalone skill FX and runtime integration are not included.",
+"Global gutter scan requires manual cell boundaries."
+]
+}
+]
+}

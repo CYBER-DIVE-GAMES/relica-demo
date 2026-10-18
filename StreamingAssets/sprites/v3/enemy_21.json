@@ -1,0 +1,334 @@
+{
+"key": "enemy_21",
+"name": "機械兵（歩行型）",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-21-walking-machine-combat-v1.png",
+"ppu": 238.89
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 206,
+"h": 217,
+"px": 138,
+"py": 216,
+"ms": 200
+},
+{
+"t": 0,
+"x": 208,
+"y": 0,
+"w": 188,
+"h": 199,
+"px": 121,
+"py": 198,
+"ms": 200
+},
+{
+"t": 0,
+"x": 398,
+"y": 0,
+"w": 201,
+"h": 217,
+"px": 128,
+"py": 216,
+"ms": 200
+},
+{
+"t": 0,
+"x": 601,
+"y": 0,
+"w": 185,
+"h": 217,
+"px": 119,
+"py": 216,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "機械拳",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 788,
+"y": 0,
+"w": 215,
+"h": 211,
+"px": 187,
+"py": 214,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1005,
+"y": 0,
+"w": 221,
+"h": 206,
+"px": 172,
+"py": 209,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1228,
+"y": 0,
+"w": 227,
+"h": 211,
+"px": 187,
+"py": 210,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1457,
+"y": 0,
+"w": 185,
+"h": 215,
+"px": 162,
+"py": 215,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "パルス弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1644,
+"y": 0,
+"w": 197,
+"h": 220,
+"px": 166,
+"py": 219,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1843,
+"y": 0,
+"w": 175,
+"h": 213,
+"px": 141,
+"py": 212,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 222,
+"w": 180,
+"h": 212,
+"px": 148,
+"py": 211,
+"ms": 160
+},
+{
+"t": 0,
+"x": 182,
+"y": 222,
+"w": 194,
+"h": 215,
+"px": 159,
+"py": 215,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "防御姿勢\\",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 378,
+"y": 222,
+"w": 206,
+"h": 210,
+"px": 142,
+"py": 210,
+"ms": 160
+},
+{
+"t": 0,
+"x": 586,
+"y": 222,
+"w": 211,
+"h": 213,
+"px": 145,
+"py": 212,
+"ms": 160
+},
+{
+"t": 0,
+"x": 799,
+"y": 222,
+"w": 199,
+"h": 202,
+"px": 152,
+"py": 202,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1000,
+"y": 222,
+"w": 194,
+"h": 215,
+"px": 139,
+"py": 216,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1196,
+"y": 222,
+"w": 169,
+"h": 206,
+"px": 133,
+"py": 208,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1367,
+"y": 222,
+"w": 184,
+"h": 188,
+"px": 145,
+"py": 190,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1553,
+"y": 222,
+"w": 178,
+"h": 188,
+"px": 148,
+"py": 190,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1733,
+"y": 222,
+"w": 186,
+"h": 215,
+"px": 149,
+"py": 214,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 439,
+"w": 178,
+"h": 170,
+"px": 118,
+"py": 169,
+"ms": 260
+},
+{
+"t": 0,
+"x": 180,
+"y": 439,
+"w": 237,
+"h": 141,
+"px": 149,
+"py": 142,
+"ms": 260
+},
+{
+"t": 0,
+"x": 419,
+"y": 439,
+"w": 226,
+"h": 103,
+"px": 155,
+"py": 104,
+"ms": 260
+},
+{
+"t": 0,
+"x": 647,
+"y": 439,
+"w": 227,
+"h": 88,
+"px": 155,
+"py": 104,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-21-walking-machine-combat-v1.png"
+],
+"notes": [
+"skill row labels from registry skillsSourceText (not validated)"
+],
+"drafts": [
+{
+"source": "enemy-21-walking-machine-combat-v1",
+"cutIssues": [],
+"edgeTouch": [],
+"progressIssues": []
+}
+]
+}

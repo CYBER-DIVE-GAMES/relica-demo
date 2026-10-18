@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<title>RELICA 体験版</title>
+<style>
+  :root { --btn: rgba(20, 16, 12, .42); --edge: rgba(255, 226, 160, .55); --ink: #ffe9b8; }
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; touch-action: none;
+    -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; overscroll-behavior: none; }
+  #wrap { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; }
+  #unity-canvas { width: 100%; height: 100%; background: #000; display: block; }
+  #loading { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    color: var(--ink); font: 16px/1.6 "Hiragino Mincho ProN", "Yu Mincho", serif; background: #000; z-index: 5; }
+  #loading .t { font-size: 34px; letter-spacing: .5em; margin-bottom: 18px; }
+  #bar { width: min(60vw, 360px); height: 6px; border: 1px solid var(--edge); border-radius: 3px; }
+  #fill { width: 0; height: 100%; background: var(--ink); }
+  #note { margin-top: 14px; font-size: 13px; opacity: .75; }
+  #rotate { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; text-align: center;
+    color: var(--ink); background: rgba(0, 0, 0, .88); z-index: 6; font: 18px/1.8 sans-serif; }
+  @media (orientation: portrait) { body.touch #rotate { display: flex; } }
+  #pad { display: none; }
+  body.touch #pad { display: block; }
+  .b { position: fixed; z-index: 4; border: 2px solid var(--edge); background: var(--btn); color: var(--ink);
+    border-radius: 50%; display: flex; align-items: center; justify-content: center; font: bold 15px sans-serif; }
+  .b.on { background: rgba(255, 226, 160, .45); color: #000; }
+  #dpad { position: fixed; z-index: 4; left: calc(18px + env(safe-area-inset-left)); bottom: 18px; width: 150px; height: 150px;
+    border-radius: 50%; border: 2px solid var(--edge); background: var(--btn); }
+  #dpad i { position: absolute; width: 0; height: 0; border: 12px solid transparent; opacity: .8; }
+  #dpad .u { left: 63px; top: 8px; border-bottom-color: var(--ink); }
+  #dpad .d { left: 63px; bottom: 8px; border-top-color: var(--ink); }
+  #dpad .l { top: 63px; left: 8px; border-right-color: var(--ink); }
+  #dpad .r { top: 63px; right: 8px; border-left-color: var(--ink); }
+  #dpad .on { opacity: 1; filter: drop-shadow(0 0 4px #fff); }
+  #bA { right: calc(22px + env(safe-area-inset-right)); bottom: 70px; width: 70px; height: 70px; font-size: 18px; }
+  #bB { right: calc(102px + env(safe-area-inset-right)); bottom: 22px; width: 58px; height: 58px; }
+  #bM { right: calc(22px + env(safe-area-inset-right)); top: 14px; width: 58px; height: 36px; border-radius: 10px; font-size: 13px; }
+  #bC { right: calc(90px + env(safe-area-inset-right)); top: 14px; width: 58px; height: 36px; border-radius: 10px; font-size: 13px; }
+  #bF { left: calc(18px + env(safe-area-inset-left)); top: 14px; width: 40px; height: 36px; border-radius: 10px; font-size: 16px; }
+</style>
+</head>
+<body>
+<div id="wrap"><canvas id="unity-canvas" tabindex="-1"></canvas></div>
+<div id="loading"><div class="t">RELICA</div><div id="bar"><div id="fill"></div></div><div id="note">読み込み中…（初回は少し時間がかかります）</div></div>
+<div id="rotate">端末を横向きにしてください<br>⟳</div>
+<div id="pad">
+  <div id="dpad"><i class="u"></i><i class="d"></i><i class="l"></i><i class="r"></i></div>
+  <div class="b" id="bA">決定</div>
+  <div class="b" id="bB">戻る</div>
+  <div class="b" id="bM">メニュー</div>
+  <div class="b" id="bC">野営</div>
+  <div class="b" id="bF">⛶</div>
+</div>
+<script>
+(function () {
+  var touch = ('ontouchstart' in window) || navigator.maxTouchPoints > 0 || /[?&]touch=1/.test(location.search);
+  if (touch) document.body.classList.add('touch');
+  var canvas = document.querySelector('#unity-canvas');
+
+  // Touch controls send the same keyboard events the game already reads (no game-code changes).
+  var K = { up: ['ArrowUp', 38], down: ['ArrowDown', 40], left: ['ArrowLeft', 37], right: ['ArrowRight', 39],
+            enter: ['Enter', 13], esc: ['Escape', 27], shift: ['ShiftLeft', 16, 'Shift'], tab: ['Tab', 9], c: ['KeyC', 67, 'c'] };
+  var held = {};
+  function key(name, down) {
+    if (!!held[name] === down) return; held[name] = down;
+    var k = K[name], o = { key: k[2] || k[0], code: k[0], keyCode: k[1], which: k[1], bubbles: true, cancelable: true };
+    window.dispatchEvent(new KeyboardEvent(down ? 'keydown' : 'keyup', o));
+  }
+  function button(id, names) {
+    var el = document.getElementById(id), ids = {};
+    function set(on) { el.classList.toggle('on', on); names.forEach(function (n) { key(n, on); }); }
+    el.addEventListener('touchstart', function (e) { e.preventDefault(); for (var t of e.changedTouches) ids[t.identifier] = 1; set(true); }, { passive: false });
+    function end(e) { e.preventDefault(); for (var t of e.changedTouches) delete ids[t.identifier]; if (!Object.keys(ids).length) set(false); }
+    el.addEventListener('touchend', end, { passive: false }); el.addEventListener('touchcancel', end, { passive: false });
+    el.addEventListener('mousedown', function (e) { e.preventDefault(); set(true); });
+    el.addEventListener('mouseup', function () { set(false); }); el.addEventListener('mouseleave', function () { if (el.classList.contains('on')) set(false); });
+  }
+  button('bA', ['enter']);
+  button('bB', ['esc', 'shift']); // like the gamepad B: cancel, hold to dash
+  button('bM', ['tab']);
+  button('bC', ['c']);
+  document.getElementById('bF').addEventListener('click', function () {
+    var d = document.documentElement, f = d.requestFullscreen || d.webkitRequestFullscreen;
+    if (document.fullscreenElement) document.exitFullscreen(); else if (f) { f.call(d).then(function () {
+      if (screen.orientation && screen.orientation.lock) screen.orientation.lock('landscape').catch(function () {}); }).catch(function () {}); }
+  });
+
+  // D-pad: slide-able, 8-way, held while touched.
+  var dp = document.getElementById('dpad'), dTouch = null;
+  var arrows = { up: dp.querySelector('.u'), down: dp.querySelector('.d'), left: dp.querySelector('.l'), right: dp.querySelector('.r') };
+  function dir(x, y) {
+    var r = dp.getBoundingClientRect(), dx = x - (r.left + r.width / 2), dy = y - (r.top + r.height / 2);
+    var on = { up: false, down: false, left: false, right: false };
+    if (Math.hypot(dx, dy) > 14) {
+      var a = Math.atan2(dy, dx) * 180 / Math.PI; // 0 = right, 90 = down
+      if (a > -67.5 && a < 67.5) on.right = true; if (a > 112.5 || a < -112.5) on.left = true;
+      if (a > 22.5 && a < 157.5) on.down = true; if (a < -22.5 && a > -157.5) on.up = true;
+    }
+    for (var n in on) { key(n, on[n]); arrows[n].classList.toggle('on', on[n]); }
+  }
+  function find(list) { for (var t of list) if (t.identifier === dTouch) return t; return null; }
+  dp.addEventListener('touchstart', function (e) { e.preventDefault(); var t = e.changedTouches[0]; dTouch = t.identifier; dir(t.clientX, t.clientY); }, { passive: false });
+  dp.addEventListener('touchmove', function (e) { e.preventDefault(); var t = find(e.changedTouches); if (t) dir(t.clientX, t.clientY); }, { passive: false });
+  function dEnd(e) { e.preventDefault(); if (find(e.changedTouches)) { dTouch = null; dir(0, 0); for (var n in arrows) { key(n, false); arrows[n].classList.remove('on'); } } }
+  dp.addEventListener('touchend', dEnd, { passive: false }); dp.addEventListener('touchcancel', dEnd, { passive: false });
+  var mouseDp = false;
+  dp.addEventListener('mousedown', function (e) { mouseDp = true; dir(e.clientX, e.clientY); });
+  window.addEventListener('mousemove', function (e) { if (mouseDp) dir(e.clientX, e.clientY); });
+  window.addEventListener('mouseup', function () { if (mouseDp) { mouseDp = false; for (var n in arrows) { key(n, false); arrows[n].classList.remove('on'); } } });
+  window.addEventListener('blur', function () { for (var n in held) key(n, false); });
+  document.addEventListener('gesturestart', function (e) { e.preventDefault(); });
+
+  var config = {
+    arguments: [],
+    dataUrl: "Build/build.data.unityweb",
+    frameworkUrl: "Build/build.framework.js.unityweb",
+    codeUrl: "Build/build.wasm.unityweb",
+    streamingAssetsUrl: "StreamingAssets",
+    companyName: "DIP Games",
+    productName: "RELICA",
+    productVersion: "1.0",
+    autoSyncPersistentDataPath: true,
+    showBanner: function (msg, type) { if (type === 'error') console.error(msg); else console.warn(msg); }
+  };
+  if (touch) config.devicePixelRatio = Math.min(window.devicePixelRatio || 1, 1.5);
+
+  var s = document.createElement('script');
+  s.src = "Build/build.loader.js";
+  s.onload = function () {
+    createUnityInstance(canvas, config, function (p) { document.getElementById('fill').style.width = (100 * p) + '%'; })
+      .then(function () { document.getElementById('loading').style.display = 'none'; })
+      .catch(function (m) { document.getElementById('note').textContent = '起動できませんでした: ' + m; });
+  };
+  document.body.appendChild(s);
+})();
+</script>
+</body>
+</html>

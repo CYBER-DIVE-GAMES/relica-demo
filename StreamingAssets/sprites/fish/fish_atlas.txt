@@ -1,0 +1,25 @@
+# id x y w h  (content rect, top-left origin; w = nose-to-tail reference length 240 px)
+f_goby 8 35 240 105
+f_silver 264 23 240 129
+f_bubble 520 14 240 147
+f_ember 776 8 240 159
+f_drop 1032 32 240 111
+f_spine 1303 8 210 159
+f_carp 9 184 237 159
+f_rockshell 264 190 240 147
+f_hornshark 520 192 240 144
+f_mirror 810 184 171 159
+f_flyer 1050 184 204 159
+f_eel 1288 201 240 126
+f_frost 8 369 240 141
+f_lantern 264 368 240 144
+f_ruincarp 520 372 240 135
+f_rainbow 776 375 240 129
+f_lord 1032 372 240 135
+f_falls 1292 360 231 159
+f_seaghost 11 536 234 159
+f_deep 264 547 240 138
+f_thousand 520 554 240 123
+f_rustking 776 536 240 159
+f_script 1038 536 228 159
+f_whitedragon 1294 536 228 159

@@ -1,0 +1,367 @@
+{
+"key": "boss_11_cherubim_released",
+"name": "終端管理体ケルビム（解放）",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/boss-11-released-combat-v1.png",
+"ppu": 103.43
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 343,
+"h": 180,
+"px": 156,
+"py": 179,
+"ms": 200
+},
+{
+"t": 0,
+"x": 345,
+"y": 0,
+"w": 347,
+"h": 182,
+"px": 167,
+"py": 181,
+"ms": 200
+},
+{
+"t": 0,
+"x": 694,
+"y": 0,
+"w": 346,
+"h": 181,
+"px": 203,
+"py": 180,
+"ms": 200
+},
+{
+"t": 0,
+"x": 1042,
+"y": 0,
+"w": 308,
+"h": 183,
+"px": 166,
+"py": 182,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "光の審判",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1352,
+"y": 0,
+"w": 280,
+"h": 172,
+"px": 145,
+"py": 171,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1634,
+"y": 0,
+"w": 245,
+"h": 172,
+"px": 139,
+"py": 171,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 185,
+"w": 312,
+"h": 172,
+"px": 152,
+"py": 171,
+"ms": 160
+},
+{
+"t": 0,
+"x": 314,
+"y": 185,
+"w": 298,
+"h": 172,
+"px": 160,
+"py": 171,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "生命吸収",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 614,
+"y": 185,
+"w": 359,
+"h": 161,
+"px": 192,
+"py": 160,
+"ms": 160
+},
+{
+"t": 0,
+"x": 975,
+"y": 185,
+"w": 344,
+"h": 161,
+"px": 184,
+"py": 160,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1321,
+"y": 185,
+"w": 346,
+"h": 161,
+"px": 187,
+"py": 160,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1669,
+"y": 185,
+"w": 331,
+"h": 161,
+"px": 193,
+"py": 160,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "輪環の束縛",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 359,
+"w": 274,
+"h": 182,
+"px": 137,
+"py": 181,
+"ms": 160
+},
+{
+"t": 0,
+"x": 276,
+"y": 359,
+"w": 274,
+"h": 182,
+"px": 142,
+"py": 181,
+"ms": 160
+},
+{
+"t": 0,
+"x": 552,
+"y": 359,
+"w": 390,
+"h": 182,
+"px": 213,
+"py": 181,
+"ms": 160
+},
+{
+"t": 0,
+"x": 944,
+"y": 359,
+"w": 315,
+"h": 182,
+"px": 178,
+"py": 181,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1261,
+"y": 359,
+"w": 266,
+"h": 166,
+"px": 99,
+"py": 165,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1529,
+"y": 359,
+"w": 253,
+"h": 166,
+"px": 108,
+"py": 165,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 543,
+"w": 293,
+"h": 166,
+"px": 133,
+"py": 165,
+"ms": 160
+},
+{
+"t": 0,
+"x": 295,
+"y": 543,
+"w": 296,
+"h": 166,
+"px": 124,
+"py": 165,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 593,
+"y": 543,
+"w": 278,
+"h": 143,
+"px": 125,
+"py": 150,
+"ms": 260
+},
+{
+"t": 0,
+"x": 873,
+"y": 543,
+"w": 278,
+"h": 147,
+"px": 168,
+"py": 146,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1153,
+"y": 543,
+"w": 342,
+"h": 150,
+"px": 193,
+"py": 150,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1497,
+"y": 543,
+"w": 335,
+"h": 151,
+"px": 194,
+"py": 150,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/boss-11-released-combat-v1.png"
+],
+"notes": [],
+"drafts": [
+{
+"source": "boss-11-released-combat-v1",
+"cutIssues": [
+"x2",
+"y1",
+"y2",
+"y3",
+"y4",
+"y5"
+],
+"edgeTouch": [
+"r1c1",
+"r1c2",
+"r1c3",
+"r1c4",
+"r2c1",
+"r2c2",
+"r2c3",
+"r2c4",
+"r3c1",
+"r3c2",
+"r3c3",
+"r3c4",
+"r4c1",
+"r4c2",
+"r4c3",
+"r4c4",
+"r5c1",
+"r5c2",
+"r5c3",
+"r5c4",
+"r6c1",
+"r6c3",
+"r6c4"
+],
+"progressIssues": [
+"Individual frame, anchor, continuity and source-board fidelity review required before delivery.",
+"Standalone skill FX and runtime integration are not included.",
+"Global gutter scan requires manual cell boundaries."
+]
+}
+]
+}

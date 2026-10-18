@@ -1,0 +1,10 @@
+{"autoHouses":false,
+ "houses":[
+  {"r":[100,110,360,215],"roof":"#b4532e","wall":"#cdb48c","style":"stone","door":"s"},
+  {"r":[1020,110,420,265],"roof":"#b4532e","wall":"#cdb48c","style":"stone","door":"s"},
+  {"r":[110,640,400,240],"roof":"#b4532e","wall":"#cdb48c","style":"stone","door":"s"},
+  {"r":[810,680,420,240],"roof":"#b4532e","wall":"#cdb48c","style":"stone","door":"s"},
+  {"r":[690,455,100,90],"roof":"#a0482a","wall":"#9a948a","style":"stone","wallH":0.8,"roofH":0.7,"door":"n"}],
+ "zones":[
+  {"type":"rock","p":[0,0,1536,0,1536,100,880,100,840,170,640,170,600,100,0,100],"h":3},
+  {"type":"water","p":[0,0,95,0,95,700,0,700]}]}

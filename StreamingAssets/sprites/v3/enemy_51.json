@@ -1,0 +1,334 @@
+{
+"key": "enemy_51",
+"name": "ルインシェイド",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-51-ruin-shade-combat-v1.png",
+"ppu": 244.44
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 189,
+"h": 221,
+"px": 90,
+"py": 220,
+"ms": 200
+},
+{
+"t": 0,
+"x": 191,
+"y": 0,
+"w": 187,
+"h": 222,
+"px": 92,
+"py": 221,
+"ms": 200
+},
+{
+"t": 0,
+"x": 380,
+"y": 0,
+"w": 198,
+"h": 221,
+"px": 94,
+"py": 220,
+"ms": 200
+},
+{
+"t": 0,
+"x": 580,
+"y": 0,
+"w": 181,
+"h": 222,
+"px": 92,
+"py": 221,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "影刃",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 763,
+"y": 0,
+"w": 222,
+"h": 230,
+"px": 118,
+"py": 230,
+"ms": 160
+},
+{
+"t": 0,
+"x": 987,
+"y": 0,
+"w": 238,
+"h": 215,
+"px": 128,
+"py": 215,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1227,
+"y": 0,
+"w": 245,
+"h": 215,
+"px": 132,
+"py": 215,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1474,
+"y": 0,
+"w": 194,
+"h": 219,
+"px": 103,
+"py": 218,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "記憶侵食",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1670,
+"y": 0,
+"w": 215,
+"h": 229,
+"px": 111,
+"py": 238,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 232,
+"w": 237,
+"h": 242,
+"px": 123,
+"py": 248,
+"ms": 160
+},
+{
+"t": 0,
+"x": 239,
+"y": 232,
+"w": 232,
+"h": 225,
+"px": 115,
+"py": 224,
+"ms": 160
+},
+{
+"t": 0,
+"x": 473,
+"y": 232,
+"w": 187,
+"h": 226,
+"px": 100,
+"py": 236,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "消失\\",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 662,
+"y": 232,
+"w": 188,
+"h": 224,
+"px": 127,
+"py": 223,
+"ms": 160
+},
+{
+"t": 0,
+"x": 852,
+"y": 232,
+"w": 202,
+"h": 222,
+"px": 142,
+"py": 221,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1056,
+"y": 232,
+"w": 215,
+"h": 219,
+"px": 150,
+"py": 218,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1273,
+"y": 232,
+"w": 178,
+"h": 222,
+"px": 130,
+"py": 221,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1453,
+"y": 232,
+"w": 207,
+"h": 229,
+"px": 113,
+"py": 228,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1662,
+"y": 232,
+"w": 189,
+"h": 214,
+"px": 107,
+"py": 213,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1853,
+"y": 232,
+"w": 194,
+"h": 195,
+"px": 109,
+"py": 194,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 476,
+"w": 189,
+"h": 227,
+"px": 117,
+"py": 226,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 191,
+"y": 476,
+"w": 205,
+"h": 180,
+"px": 101,
+"py": 179,
+"ms": 260
+},
+{
+"t": 0,
+"x": 398,
+"y": 476,
+"w": 228,
+"h": 145,
+"px": 138,
+"py": 147,
+"ms": 260
+},
+{
+"t": 0,
+"x": 628,
+"y": 476,
+"w": 229,
+"h": 135,
+"px": 139,
+"py": 136,
+"ms": 260
+},
+{
+"t": 0,
+"x": 859,
+"y": 476,
+"w": 230,
+"h": 139,
+"px": 144,
+"py": 150,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-51-ruin-shade-combat-v1.png"
+],
+"notes": [
+"skill row labels from registry skillsSourceText (not validated)"
+],
+"drafts": [
+{
+"source": "enemy-51-ruin-shade-combat-v1",
+"cutIssues": [],
+"edgeTouch": [],
+"progressIssues": []
+}
+]
+}

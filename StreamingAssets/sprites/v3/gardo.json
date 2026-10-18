@@ -1,0 +1,142 @@
+{
+"key": "gardo",
+"name": "ガルド・少年期",
+"status": "design",
+"facing": "front",
+"textures": [
+{
+"file": "tex/gald-young-pixel-v2.png",
+"ppu": 265.31
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機・瞬き。人物ごとに間隔を調整。動作の細部は調整中。",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "design",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 291,
+"h": 552,
+"px": 159,
+"py": 551,
+"ms": 4100
+},
+{
+"t": 0,
+"x": 293,
+"y": 0,
+"w": 291,
+"h": 552,
+"px": 159,
+"py": 551,
+"ms": 110
+},
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 291,
+"h": 552,
+"px": 159,
+"py": 551,
+"ms": 900
+}
+]
+},
+{
+"name": "talk",
+"label": "身振り→発話→手を戻す。話しかけるボタンでは一度再生して待機に戻る。中割りは調整中。",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "design",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 291,
+"h": 552,
+"px": 159,
+"py": 551,
+"ms": 300
+},
+{
+"t": 0,
+"x": 586,
+"y": 0,
+"w": 291,
+"h": 554,
+"px": 159,
+"py": 553,
+"ms": 140
+},
+{
+"t": 0,
+"x": 879,
+"y": 0,
+"w": 355,
+"h": 554,
+"px": 159,
+"py": 553,
+"ms": 420
+},
+{
+"t": 0,
+"x": 586,
+"y": 0,
+"w": 291,
+"h": 554,
+"px": 159,
+"py": 553,
+"ms": 170
+},
+{
+"t": 0,
+"x": 879,
+"y": 0,
+"w": 355,
+"h": 554,
+"px": 159,
+"py": 553,
+"ms": 360
+},
+{
+"t": 0,
+"x": 586,
+"y": 0,
+"w": 291,
+"h": 554,
+"px": 159,
+"py": 553,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 291,
+"h": 552,
+"px": 159,
+"py": 551,
+"ms": 450
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v1/gald-young-pixel-v2.png"
+],
+"notes": [
+"motion-v1 four-pose design study (idle/talk only)"
+]
+}

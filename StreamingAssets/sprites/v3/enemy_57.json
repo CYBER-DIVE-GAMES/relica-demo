@@ -1,0 +1,341 @@
+{
+"key": "enemy_57",
+"name": "セレスドローン",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-57-seres-drone-combat-v1.png",
+"ppu": 223.33
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 200,
+"h": 202,
+"px": 94,
+"py": 201,
+"ms": 200
+},
+{
+"t": 0,
+"x": 202,
+"y": 0,
+"w": 198,
+"h": 202,
+"px": 89,
+"py": 201,
+"ms": 200
+},
+{
+"t": 0,
+"x": 402,
+"y": 0,
+"w": 194,
+"h": 203,
+"px": 99,
+"py": 202,
+"ms": 200
+},
+{
+"t": 0,
+"x": 598,
+"y": 0,
+"w": 190,
+"h": 200,
+"px": 108,
+"py": 202,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "監視光線",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 790,
+"y": 0,
+"w": 216,
+"h": 205,
+"px": 101,
+"py": 204,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1008,
+"y": 0,
+"w": 230,
+"h": 207,
+"px": 101,
+"py": 206,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1240,
+"y": 0,
+"w": 239,
+"h": 190,
+"px": 133,
+"py": 189,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1481,
+"y": 0,
+"w": 194,
+"h": 197,
+"px": 108,
+"py": 196,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "Lock-on",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1677,
+"y": 0,
+"w": 195,
+"h": 215,
+"px": 93,
+"py": 217,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 217,
+"w": 200,
+"h": 223,
+"px": 101,
+"py": 222,
+"ms": 160
+},
+{
+"t": 0,
+"x": 202,
+"y": 217,
+"w": 234,
+"h": 232,
+"px": 123,
+"py": 231,
+"ms": 160
+},
+{
+"t": 0,
+"x": 438,
+"y": 217,
+"w": 187,
+"h": 214,
+"px": 106,
+"py": 213,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "制御パルス",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 627,
+"y": 217,
+"w": 206,
+"h": 203,
+"px": 101,
+"py": 202,
+"ms": 160
+},
+{
+"t": 0,
+"x": 835,
+"y": 217,
+"w": 255,
+"h": 229,
+"px": 124,
+"py": 228,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1092,
+"y": 217,
+"w": 255,
+"h": 216,
+"px": 131,
+"py": 215,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1349,
+"y": 217,
+"w": 195,
+"h": 202,
+"px": 104,
+"py": 201,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1546,
+"y": 217,
+"w": 205,
+"h": 222,
+"px": 122,
+"py": 224,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1753,
+"y": 217,
+"w": 208,
+"h": 217,
+"px": 127,
+"py": 218,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 451,
+"w": 219,
+"h": 211,
+"px": 130,
+"py": 210,
+"ms": 160
+},
+{
+"t": 0,
+"x": 221,
+"y": 451,
+"w": 189,
+"h": 206,
+"px": 131,
+"py": 205,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 412,
+"y": 451,
+"w": 198,
+"h": 234,
+"px": 130,
+"py": 233,
+"ms": 260
+},
+{
+"t": 0,
+"x": 612,
+"y": 451,
+"w": 185,
+"h": 213,
+"px": 122,
+"py": 218,
+"ms": 260
+},
+{
+"t": 0,
+"x": 799,
+"y": 451,
+"w": 237,
+"h": 197,
+"px": 160,
+"py": 204,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1038,
+"y": 451,
+"w": 213,
+"h": 158,
+"px": 161,
+"py": 165,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-57-seres-drone-combat-v1.png"
+],
+"notes": [
+"skill row labels from registry skillsSourceText (not validated)"
+],
+"drafts": [
+{
+"source": "enemy-57-seres-drone-combat-v1",
+"cutIssues": [
+"x2"
+],
+"edgeTouch": [
+"r2c2",
+"r2c3",
+"r4c2",
+"r4c3"
+],
+"progressIssues": []
+}
+]
+}

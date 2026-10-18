@@ -1,0 +1,351 @@
+{
+"key": "boss_09_atlas_ground",
+"name": "天空機兵アトラス（地上）",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/boss-09-ground-combat-v1.png",
+"ppu": 88.0
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 376,
+"h": 156,
+"px": 239,
+"py": 155,
+"ms": 200
+},
+{
+"t": 0,
+"x": 378,
+"y": 0,
+"w": 375,
+"h": 156,
+"px": 242,
+"py": 155,
+"ms": 200
+},
+{
+"t": 0,
+"x": 755,
+"y": 0,
+"w": 377,
+"h": 155,
+"px": 237,
+"py": 154,
+"ms": 200
+},
+{
+"t": 0,
+"x": 1134,
+"y": 0,
+"w": 374,
+"h": 155,
+"px": 238,
+"py": 154,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "地上砲",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1510,
+"y": 0,
+"w": 378,
+"h": 160,
+"px": 167,
+"py": 162,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 162,
+"w": 375,
+"h": 161,
+"px": 170,
+"py": 164,
+"ms": 160
+},
+{
+"t": 0,
+"x": 377,
+"y": 162,
+"w": 376,
+"h": 165,
+"px": 165,
+"py": 164,
+"ms": 160
+},
+{
+"t": 0,
+"x": 755,
+"y": 162,
+"w": 375,
+"h": 163,
+"px": 167,
+"py": 164,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "重力制御",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1132,
+"y": 162,
+"w": 377,
+"h": 159,
+"px": 246,
+"py": 158,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1511,
+"y": 162,
+"w": 365,
+"h": 161,
+"px": 241,
+"py": 161,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 329,
+"w": 376,
+"h": 150,
+"px": 245,
+"py": 150,
+"ms": 160
+},
+{
+"t": 0,
+"x": 378,
+"y": 329,
+"w": 373,
+"h": 158,
+"px": 245,
+"py": 158,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "翼落とし",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 753,
+"y": 329,
+"w": 372,
+"h": 150,
+"px": 143,
+"py": 149,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1127,
+"y": 329,
+"w": 367,
+"h": 143,
+"px": 145,
+"py": 143,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1496,
+"y": 329,
+"w": 377,
+"h": 137,
+"px": 143,
+"py": 137,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 489,
+"w": 372,
+"h": 155,
+"px": 143,
+"py": 154,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 374,
+"y": 489,
+"w": 370,
+"h": 157,
+"px": 172,
+"py": 156,
+"ms": 160
+},
+{
+"t": 0,
+"x": 746,
+"y": 489,
+"w": 349,
+"h": 153,
+"px": 153,
+"py": 154,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1097,
+"y": 489,
+"w": 365,
+"h": 152,
+"px": 164,
+"py": 151,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1464,
+"y": 489,
+"w": 366,
+"h": 157,
+"px": 173,
+"py": 156,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 648,
+"w": 370,
+"h": 161,
+"px": 164,
+"py": 171,
+"ms": 260
+},
+{
+"t": 0,
+"x": 372,
+"y": 648,
+"w": 370,
+"h": 156,
+"px": 168,
+"py": 166,
+"ms": 260
+},
+{
+"t": 0,
+"x": 744,
+"y": 648,
+"w": 370,
+"h": 119,
+"px": 164,
+"py": 129,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1116,
+"y": 648,
+"w": 367,
+"h": 114,
+"px": 166,
+"py": 113,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/boss-09-ground-combat-v1.png"
+],
+"notes": [],
+"drafts": [
+{
+"source": "boss-09-ground-combat-v1",
+"cutIssues": [],
+"edgeTouch": [
+"r1c1",
+"r1c2",
+"r1c3",
+"r1c4",
+"r2c1",
+"r2c2",
+"r2c3",
+"r3c1",
+"r4c1",
+"r4c3",
+"r4c4",
+"r5c1",
+"r5c2",
+"r5c3",
+"r5c4"
+],
+"progressIssues": [
+"Individual frame, anchor, continuity and source-board fidelity review required before delivery.",
+"Standalone skill FX and runtime integration are not included."
+]
+}
+]
+}

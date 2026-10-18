@@ -1,0 +1,344 @@
+{
+"key": "enemy_17",
+"name": "クリスタルゴーレム",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-17-crystal-golem-combat-v1.png",
+"ppu": 173.5
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 213,
+"h": 200,
+"px": 103,
+"py": 199,
+"ms": 200
+},
+{
+"t": 0,
+"x": 215,
+"y": 0,
+"w": 212,
+"h": 200,
+"px": 120,
+"py": 199,
+"ms": 200
+},
+{
+"t": 0,
+"x": 429,
+"y": 0,
+"w": 213,
+"h": 201,
+"px": 121,
+"py": 200,
+"ms": 200
+},
+{
+"t": 0,
+"x": 644,
+"y": 0,
+"w": 214,
+"h": 205,
+"px": 132,
+"py": 204,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "結晶拳",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 860,
+"y": 0,
+"w": 212,
+"h": 203,
+"px": 135,
+"py": 202,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1074,
+"y": 0,
+"w": 228,
+"h": 182,
+"px": 152,
+"py": 181,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1304,
+"y": 0,
+"w": 258,
+"h": 182,
+"px": 175,
+"py": 181,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1564,
+"y": 0,
+"w": 224,
+"h": 193,
+"px": 175,
+"py": 192,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "氷晶弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1790,
+"y": 0,
+"w": 219,
+"h": 201,
+"px": 130,
+"py": 202,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 207,
+"w": 189,
+"h": 194,
+"px": 135,
+"py": 193,
+"ms": 160
+},
+{
+"t": 0,
+"x": 191,
+"y": 207,
+"w": 219,
+"h": 180,
+"px": 157,
+"py": 179,
+"ms": 160
+},
+{
+"t": 0,
+"x": 412,
+"y": 207,
+"w": 208,
+"h": 197,
+"px": 150,
+"py": 196,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "反射晶",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 622,
+"y": 207,
+"w": 190,
+"h": 198,
+"px": 141,
+"py": 202,
+"ms": 160
+},
+{
+"t": 0,
+"x": 814,
+"y": 207,
+"w": 183,
+"h": 198,
+"px": 147,
+"py": 199,
+"ms": 160
+},
+{
+"t": 0,
+"x": 999,
+"y": 207,
+"w": 194,
+"h": 186,
+"px": 158,
+"py": 186,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1195,
+"y": 207,
+"w": 212,
+"h": 200,
+"px": 171,
+"py": 199,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1409,
+"y": 207,
+"w": 203,
+"h": 215,
+"px": 106,
+"py": 216,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1614,
+"y": 207,
+"w": 222,
+"h": 194,
+"px": 119,
+"py": 194,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 424,
+"w": 214,
+"h": 178,
+"px": 116,
+"py": 177,
+"ms": 160
+},
+{
+"t": 0,
+"x": 216,
+"y": 424,
+"w": 206,
+"h": 205,
+"px": 121,
+"py": 204,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 424,
+"y": 424,
+"w": 213,
+"h": 172,
+"px": 137,
+"py": 172,
+"ms": 260
+},
+{
+"t": 0,
+"x": 639,
+"y": 424,
+"w": 242,
+"h": 138,
+"px": 166,
+"py": 138,
+"ms": 260
+},
+{
+"t": 0,
+"x": 883,
+"y": 424,
+"w": 258,
+"h": 120,
+"px": 175,
+"py": 119,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1143,
+"y": 424,
+"w": 234,
+"h": 86,
+"px": 175,
+"py": 85,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-17-crystal-golem-combat-v1.png"
+],
+"notes": [
+"skill row labels from registry skillsSourceText (not validated)"
+],
+"drafts": [
+{
+"source": "enemy-17-crystal-golem-combat-v1",
+"cutIssues": [
+"x2",
+"x3"
+],
+"edgeTouch": [
+"r2c2",
+"r2c3",
+"r2c4",
+"r6c2",
+"r6c3",
+"r6c4"
+],
+"progressIssues": []
+}
+]
+}

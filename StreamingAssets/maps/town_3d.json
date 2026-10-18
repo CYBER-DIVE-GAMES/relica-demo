@@ -1,0 +1,11 @@
+{"autoHouses":false,
+ "houses":[
+  {"r":[370,0,330,200],"roof":"#b4532e","wall":"#d8c8a4","style":"stone","door":"s"},
+  {"r":[830,0,570,290],"roof":"#b85a30","wall":"#ead9b8","door":"s"},
+  {"r":[900,600,580,360],"roof":"#b85a30","wall":"#ead9b8"},
+  {"r":[20,200,220,110],"roof":"#5a7cbe","style":"wood","wallH":0.9,"roofH":0.4,"door":"e"},
+  {"r":[60,350,180,90],"roof":"#c0442c","style":"wood","wallH":0.9,"roofH":0.4,"door":"e"},
+  {"r":[0,445,150,110],"roof":"#8a9a62","style":"wood","wallH":0.9,"roofH":0.4,"door":"e"}],
+ "zones":[
+  {"type":"plaza","p":[390,400,720,400,720,600,390,600],"h":0.4},
+  {"type":"water","p":[470,440,650,440,650,520,470,520]}]}

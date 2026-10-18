@@ -1,0 +1,341 @@
+{
+"key": "enemy_45",
+"name": "リーフワイバーン",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-45-leaf-wyvern-combat-v1.png",
+"ppu": 204.44
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 200,
+"h": 232,
+"px": 101,
+"py": 231,
+"ms": 200
+},
+{
+"t": 0,
+"x": 202,
+"y": 0,
+"w": 200,
+"h": 232,
+"px": 91,
+"py": 231,
+"ms": 200
+},
+{
+"t": 0,
+"x": 404,
+"y": 0,
+"w": 208,
+"h": 222,
+"px": 102,
+"py": 221,
+"ms": 200
+},
+{
+"t": 0,
+"x": 614,
+"y": 0,
+"w": 210,
+"h": 230,
+"px": 98,
+"py": 229,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "翼爪",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 826,
+"y": 0,
+"w": 205,
+"h": 214,
+"px": 117,
+"py": 218,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1033,
+"y": 0,
+"w": 220,
+"h": 223,
+"px": 116,
+"py": 227,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1255,
+"y": 0,
+"w": 226,
+"h": 220,
+"px": 113,
+"py": 222,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1483,
+"y": 0,
+"w": 232,
+"h": 219,
+"px": 123,
+"py": 218,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "葉嵐",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1717,
+"y": 0,
+"w": 201,
+"h": 219,
+"px": 119,
+"py": 219,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 234,
+"w": 247,
+"h": 218,
+"px": 115,
+"py": 222,
+"ms": 160
+},
+{
+"t": 0,
+"x": 249,
+"y": 234,
+"w": 208,
+"h": 213,
+"px": 135,
+"py": 217,
+"ms": 160
+},
+{
+"t": 0,
+"x": 459,
+"y": 234,
+"w": 221,
+"h": 216,
+"px": 120,
+"py": 215,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "急降下",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 682,
+"y": 234,
+"w": 216,
+"h": 227,
+"px": 109,
+"py": 230,
+"ms": 160
+},
+{
+"t": 0,
+"x": 900,
+"y": 234,
+"w": 257,
+"h": 227,
+"px": 122,
+"py": 228,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1159,
+"y": 234,
+"w": 237,
+"h": 232,
+"px": 132,
+"py": 232,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1398,
+"y": 234,
+"w": 234,
+"h": 236,
+"px": 124,
+"py": 235,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1634,
+"y": 234,
+"w": 219,
+"h": 210,
+"px": 139,
+"py": 216,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 472,
+"w": 224,
+"h": 184,
+"px": 144,
+"py": 190,
+"ms": 160
+},
+{
+"t": 0,
+"x": 226,
+"y": 472,
+"w": 210,
+"h": 160,
+"px": 143,
+"py": 166,
+"ms": 160
+},
+{
+"t": 0,
+"x": 438,
+"y": 472,
+"w": 209,
+"h": 162,
+"px": 132,
+"py": 161,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 649,
+"y": 472,
+"w": 207,
+"h": 190,
+"px": 192,
+"py": 189,
+"ms": 260
+},
+{
+"t": 0,
+"x": 858,
+"y": 472,
+"w": 223,
+"h": 155,
+"px": 188,
+"py": 165,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1083,
+"y": 472,
+"w": 242,
+"h": 119,
+"px": 206,
+"py": 132,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1327,
+"y": 472,
+"w": 232,
+"h": 119,
+"px": 202,
+"py": 128,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-45-leaf-wyvern-combat-v1.png"
+],
+"notes": [
+"skill row labels from registry skillsSourceText (not validated)"
+],
+"drafts": [
+{
+"source": "enemy-45-leaf-wyvern-combat-v1",
+"cutIssues": [
+"x2"
+],
+"edgeTouch": [
+"r3c2",
+"r3c3",
+"r4c2",
+"r4c3"
+],
+"progressIssues": []
+}
+]
+}

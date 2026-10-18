@@ -1,0 +1,334 @@
+{
+"key": "visual_forest_rabbit",
+"name": "森のウサギ",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/visual-forest-rabbit-combat-v1.png",
+"ppu": 228.89
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 170,
+"h": 207,
+"px": 80,
+"py": 207,
+"ms": 200
+},
+{
+"t": 0,
+"x": 172,
+"y": 0,
+"w": 179,
+"h": 186,
+"px": 78,
+"py": 185,
+"ms": 200
+},
+{
+"t": 0,
+"x": 353,
+"y": 0,
+"w": 189,
+"h": 208,
+"px": 73,
+"py": 208,
+"ms": 200
+},
+{
+"t": 0,
+"x": 544,
+"y": 0,
+"w": 177,
+"h": 201,
+"px": 64,
+"py": 201,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 723,
+"y": 0,
+"w": 178,
+"h": 195,
+"px": 85,
+"py": 196,
+"ms": 160
+},
+{
+"t": 0,
+"x": 903,
+"y": 0,
+"w": 183,
+"h": 207,
+"px": 79,
+"py": 214,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1088,
+"y": 0,
+"w": 223,
+"h": 174,
+"px": 86,
+"py": 187,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1313,
+"y": 0,
+"w": 179,
+"h": 171,
+"px": 75,
+"py": 170,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1494,
+"y": 0,
+"w": 184,
+"h": 174,
+"px": 90,
+"py": 174,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1680,
+"y": 0,
+"w": 180,
+"h": 213,
+"px": 79,
+"py": 213,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 215,
+"w": 221,
+"h": 189,
+"px": 99,
+"py": 188,
+"ms": 160
+},
+{
+"t": 0,
+"x": 223,
+"y": 215,
+"w": 178,
+"h": 172,
+"px": 72,
+"py": 171,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 403,
+"y": 215,
+"w": 179,
+"h": 177,
+"px": 83,
+"py": 179,
+"ms": 160
+},
+{
+"t": 0,
+"x": 584,
+"y": 215,
+"w": 193,
+"h": 161,
+"px": 73,
+"py": 162,
+"ms": 160
+},
+{
+"t": 0,
+"x": 779,
+"y": 215,
+"w": 182,
+"h": 174,
+"px": 53,
+"py": 175,
+"ms": 160
+},
+{
+"t": 0,
+"x": 963,
+"y": 215,
+"w": 172,
+"h": 174,
+"px": 58,
+"py": 173,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1137,
+"y": 215,
+"w": 179,
+"h": 172,
+"px": 113,
+"py": 175,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1318,
+"y": 215,
+"w": 178,
+"h": 157,
+"px": 95,
+"py": 157,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1498,
+"y": 215,
+"w": 184,
+"h": 160,
+"px": 104,
+"py": 159,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1684,
+"y": 215,
+"w": 191,
+"h": 204,
+"px": 107,
+"py": 206,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 421,
+"w": 176,
+"h": 147,
+"px": 116,
+"py": 146,
+"ms": 260
+},
+{
+"t": 0,
+"x": 178,
+"y": 421,
+"w": 174,
+"h": 123,
+"px": 109,
+"py": 124,
+"ms": 260
+},
+{
+"t": 0,
+"x": 354,
+"y": 421,
+"w": 190,
+"h": 108,
+"px": 109,
+"py": 107,
+"ms": 260
+},
+{
+"t": 0,
+"x": 546,
+"y": 421,
+"w": 209,
+"h": 81,
+"px": 141,
+"py": 80,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/visual-forest-rabbit-combat-v1.png"
+],
+"notes": [
+"slot 04 appearance only; NOT bound to enemy_04 (skill DB conflict)"
+],
+"drafts": [
+{
+"source": "visual-forest-rabbit-combat-v1",
+"cutIssues": [],
+"edgeTouch": [],
+"progressIssues": []
+}
+]
+}

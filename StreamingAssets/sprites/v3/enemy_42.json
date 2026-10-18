@@ -1,0 +1,348 @@
+{
+"key": "enemy_42",
+"name": "ポイズンフラワー",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-42-poison-flower-combat-v1.png",
+"ppu": 254.44
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 172,
+"h": 231,
+"px": 84,
+"py": 233,
+"ms": 200
+},
+{
+"t": 0,
+"x": 174,
+"y": 0,
+"w": 170,
+"h": 225,
+"px": 84,
+"py": 227,
+"ms": 200
+},
+{
+"t": 0,
+"x": 346,
+"y": 0,
+"w": 173,
+"h": 231,
+"px": 89,
+"py": 233,
+"ms": 200
+},
+{
+"t": 0,
+"x": 521,
+"y": 0,
+"w": 167,
+"h": 227,
+"px": 95,
+"py": 226,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "毒花粉",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 690,
+"y": 0,
+"w": 194,
+"h": 243,
+"px": 102,
+"py": 243,
+"ms": 160
+},
+{
+"t": 0,
+"x": 886,
+"y": 0,
+"w": 253,
+"h": 236,
+"px": 132,
+"py": 235,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1141,
+"y": 0,
+"w": 236,
+"h": 240,
+"px": 137,
+"py": 239,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1379,
+"y": 0,
+"w": 215,
+"h": 228,
+"px": 128,
+"py": 227,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "蔓鞭",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1596,
+"y": 0,
+"w": 226,
+"h": 226,
+"px": 87,
+"py": 226,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 245,
+"w": 258,
+"h": 225,
+"px": 119,
+"py": 225,
+"ms": 160
+},
+{
+"t": 0,
+"x": 260,
+"y": 245,
+"w": 258,
+"h": 200,
+"px": 119,
+"py": 200,
+"ms": 160
+},
+{
+"t": 0,
+"x": 520,
+"y": 245,
+"w": 221,
+"h": 226,
+"px": 119,
+"py": 225,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "甘香",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 743,
+"y": 245,
+"w": 225,
+"h": 236,
+"px": 118,
+"py": 238,
+"ms": 160
+},
+{
+"t": 0,
+"x": 970,
+"y": 245,
+"w": 243,
+"h": 248,
+"px": 135,
+"py": 247,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1215,
+"y": 245,
+"w": 223,
+"h": 247,
+"px": 120,
+"py": 246,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1440,
+"y": 245,
+"w": 214,
+"h": 239,
+"px": 126,
+"py": 238,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1656,
+"y": 245,
+"w": 178,
+"h": 240,
+"px": 83,
+"py": 241,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1836,
+"y": 245,
+"w": 174,
+"h": 239,
+"px": 92,
+"py": 238,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 495,
+"w": 177,
+"h": 214,
+"px": 89,
+"py": 217,
+"ms": 160
+},
+{
+"t": 0,
+"x": 179,
+"y": 495,
+"w": 169,
+"h": 224,
+"px": 97,
+"py": 223,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 350,
+"y": 495,
+"w": 193,
+"h": 186,
+"px": 101,
+"py": 185,
+"ms": 260
+},
+{
+"t": 0,
+"x": 545,
+"y": 495,
+"w": 218,
+"h": 180,
+"px": 102,
+"py": 181,
+"ms": 260
+},
+{
+"t": 0,
+"x": 765,
+"y": 495,
+"w": 258,
+"h": 144,
+"px": 142,
+"py": 151,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1025,
+"y": 495,
+"w": 234,
+"h": 118,
+"px": 142,
+"py": 117,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-42-poison-flower-combat-v1.png"
+],
+"notes": [
+"skill row labels from registry skillsSourceText (not validated)"
+],
+"drafts": [
+{
+"source": "enemy-42-poison-flower-combat-v1",
+"cutIssues": [
+"x1",
+"x2",
+"x3"
+],
+"edgeTouch": [
+"r2c2",
+"r2c3",
+"r3c1",
+"r3c2",
+"r3c3",
+"r3c4",
+"r6c2",
+"r6c3",
+"r6c4"
+],
+"progressIssues": []
+}
+]
+}

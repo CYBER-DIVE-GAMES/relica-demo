@@ -1,0 +1,122 @@
+{
+"key": "rain_adult",
+"name": "レイン・青年期",
+"status": "design",
+"facing": "front",
+"textures": [
+{
+"file": "tex/rayn-adult-pixel-v1.png",
+"ppu": 240.74
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "立ち姿・瞬きの確認用。動作の細部は調整中。",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "design",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 257,
+"h": 603,
+"px": 151,
+"py": 602,
+"ms": 3550
+},
+{
+"t": 0,
+"x": 259,
+"y": 0,
+"w": 257,
+"h": 602,
+"px": 152,
+"py": 601,
+"ms": 110
+},
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 257,
+"h": 603,
+"px": 151,
+"py": 602,
+"ms": 800
+}
+]
+},
+{
+"name": "talk",
+"label": "会話ポーズの確認用。滑らかな中割り・全方向動作は未完成。",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "design",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 257,
+"h": 603,
+"px": 151,
+"py": 602,
+"ms": 300
+},
+{
+"t": 0,
+"x": 518,
+"y": 0,
+"w": 249,
+"h": 570,
+"px": 141,
+"py": 569,
+"ms": 230
+},
+{
+"t": 0,
+"x": 769,
+"y": 0,
+"w": 320,
+"h": 570,
+"px": 146,
+"py": 569,
+"ms": 450
+},
+{
+"t": 0,
+"x": 518,
+"y": 0,
+"w": 249,
+"h": 570,
+"px": 141,
+"py": 569,
+"ms": 230
+},
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 257,
+"h": 603,
+"px": 151,
+"py": 602,
+"ms": 350
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v1/rayn-adult-pixel-v1.png"
+],
+"notes": [
+"motion-v1 four-pose design study (idle/talk only)"
+]
+}

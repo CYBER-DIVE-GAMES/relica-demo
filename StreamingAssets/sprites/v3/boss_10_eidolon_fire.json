@@ -1,0 +1,354 @@
+{
+"key": "boss_10_eidolon_fire",
+"name": "原初レリカ・エイドロン（適応：炎）",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/boss-10-fire-combat-v1.png",
+"ppu": 95.43
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 294,
+"h": 169,
+"px": 98,
+"py": 169,
+"ms": 200
+},
+{
+"t": 0,
+"x": 296,
+"y": 0,
+"w": 312,
+"h": 169,
+"px": 117,
+"py": 168,
+"ms": 200
+},
+{
+"t": 0,
+"x": 610,
+"y": 0,
+"w": 290,
+"h": 169,
+"px": 114,
+"py": 168,
+"ms": 200
+},
+{
+"t": 0,
+"x": 902,
+"y": 0,
+"w": 306,
+"h": 169,
+"px": 179,
+"py": 169,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "生命の波動",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1210,
+"y": 0,
+"w": 296,
+"h": 163,
+"px": 93,
+"py": 162,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1508,
+"y": 0,
+"w": 291,
+"h": 177,
+"px": 110,
+"py": 176,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 179,
+"w": 319,
+"h": 177,
+"px": 115,
+"py": 176,
+"ms": 160
+},
+{
+"t": 0,
+"x": 321,
+"y": 179,
+"w": 304,
+"h": 166,
+"px": 164,
+"py": 166,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "天界の裁き",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 627,
+"y": 179,
+"w": 286,
+"h": 143,
+"px": 99,
+"py": 142,
+"ms": 160
+},
+{
+"t": 0,
+"x": 915,
+"y": 179,
+"w": 364,
+"h": 148,
+"px": 144,
+"py": 148,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1281,
+"y": 179,
+"w": 394,
+"h": 147,
+"px": 132,
+"py": 147,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1677,
+"y": 179,
+"w": 308,
+"h": 143,
+"px": 150,
+"py": 142,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "大地の息吹",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 358,
+"w": 298,
+"h": 158,
+"px": 111,
+"py": 158,
+"ms": 160
+},
+{
+"t": 0,
+"x": 300,
+"y": 358,
+"w": 295,
+"h": 159,
+"px": 82,
+"py": 158,
+"ms": 160
+},
+{
+"t": 0,
+"x": 597,
+"y": 358,
+"w": 432,
+"h": 150,
+"px": 164,
+"py": 149,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1031,
+"y": 358,
+"w": 273,
+"h": 158,
+"px": 137,
+"py": 157,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1306,
+"y": 358,
+"w": 280,
+"h": 164,
+"px": 112,
+"py": 163,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1588,
+"y": 358,
+"w": 296,
+"h": 160,
+"px": 119,
+"py": 160,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 524,
+"w": 310,
+"h": 160,
+"px": 103,
+"py": 159,
+"ms": 160
+},
+{
+"t": 0,
+"x": 312,
+"y": 524,
+"w": 298,
+"h": 158,
+"px": 168,
+"py": 158,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 612,
+"y": 524,
+"w": 305,
+"h": 139,
+"px": 96,
+"py": 138,
+"ms": 260
+},
+{
+"t": 0,
+"x": 919,
+"y": 524,
+"w": 292,
+"h": 138,
+"px": 101,
+"py": 137,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1213,
+"y": 524,
+"w": 401,
+"h": 126,
+"px": 128,
+"py": 125,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1616,
+"y": 524,
+"w": 319,
+"h": 96,
+"px": 168,
+"py": 95,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/boss-10-fire-combat-v1.png"
+],
+"notes": [],
+"drafts": [
+{
+"source": "boss-10-fire-combat-v1",
+"cutIssues": [
+"x3"
+],
+"edgeTouch": [
+"r1c1",
+"r1c2",
+"r1c3",
+"r2c1",
+"r2c2",
+"r2c3",
+"r3c1",
+"r3c4",
+"r4c2",
+"r4c3",
+"r4c4",
+"r5c1",
+"r5c3",
+"r6c3",
+"r6c4"
+],
+"progressIssues": [
+"Individual frame, anchor, continuity and source-board fidelity review required before delivery.",
+"Standalone skill FX and runtime integration are not included.",
+"Global gutter scan requires manual cell boundaries."
+]
+}
+]
+}

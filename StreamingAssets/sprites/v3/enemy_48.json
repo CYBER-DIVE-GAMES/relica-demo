@@ -1,0 +1,334 @@
+{
+"key": "enemy_48",
+"name": "マッシュゴーレム",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-48-mush-golem-combat-v1.png",
+"ppu": 202.78
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 177,
+"h": 217,
+"px": 111,
+"py": 216,
+"ms": 200
+},
+{
+"t": 0,
+"x": 179,
+"y": 0,
+"w": 180,
+"h": 221,
+"px": 114,
+"py": 221,
+"ms": 200
+},
+{
+"t": 0,
+"x": 361,
+"y": 0,
+"w": 179,
+"h": 211,
+"px": 108,
+"py": 211,
+"ms": 200
+},
+{
+"t": 0,
+"x": 542,
+"y": 0,
+"w": 173,
+"h": 218,
+"px": 113,
+"py": 218,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "胞子",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 717,
+"y": 0,
+"w": 174,
+"h": 213,
+"px": 117,
+"py": 213,
+"ms": 160
+},
+{
+"t": 0,
+"x": 893,
+"y": 0,
+"w": 211,
+"h": 214,
+"px": 122,
+"py": 213,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1106,
+"y": 0,
+"w": 222,
+"h": 215,
+"px": 125,
+"py": 214,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1330,
+"y": 0,
+"w": 239,
+"h": 209,
+"px": 158,
+"py": 208,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "菌拳",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1571,
+"y": 0,
+"w": 193,
+"h": 225,
+"px": 130,
+"py": 224,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1766,
+"y": 0,
+"w": 203,
+"h": 216,
+"px": 142,
+"py": 217,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 227,
+"w": 232,
+"h": 216,
+"px": 147,
+"py": 216,
+"ms": 160
+},
+{
+"t": 0,
+"x": 234,
+"y": 227,
+"w": 174,
+"h": 217,
+"px": 123,
+"py": 218,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "胞子再生\\",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 410,
+"y": 227,
+"w": 158,
+"h": 206,
+"px": 96,
+"py": 212,
+"ms": 160
+},
+{
+"t": 0,
+"x": 570,
+"y": 227,
+"w": 174,
+"h": 227,
+"px": 103,
+"py": 226,
+"ms": 160
+},
+{
+"t": 0,
+"x": 746,
+"y": 227,
+"w": 180,
+"h": 226,
+"px": 115,
+"py": 225,
+"ms": 160
+},
+{
+"t": 0,
+"x": 928,
+"y": 227,
+"w": 175,
+"h": 228,
+"px": 112,
+"py": 228,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1105,
+"y": 227,
+"w": 166,
+"h": 213,
+"px": 123,
+"py": 217,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1273,
+"y": 227,
+"w": 168,
+"h": 185,
+"px": 124,
+"py": 191,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1443,
+"y": 227,
+"w": 154,
+"h": 177,
+"px": 111,
+"py": 184,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1599,
+"y": 227,
+"w": 173,
+"h": 218,
+"px": 127,
+"py": 217,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1774,
+"y": 227,
+"w": 203,
+"h": 168,
+"px": 113,
+"py": 169,
+"ms": 260
+},
+{
+"t": 0,
+"x": 0,
+"y": 457,
+"w": 200,
+"h": 164,
+"px": 125,
+"py": 165,
+"ms": 260
+},
+{
+"t": 0,
+"x": 202,
+"y": 457,
+"w": 235,
+"h": 129,
+"px": 143,
+"py": 130,
+"ms": 260
+},
+{
+"t": 0,
+"x": 439,
+"y": 457,
+"w": 226,
+"h": 103,
+"px": 146,
+"py": 102,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-48-mush-golem-combat-v1.png"
+],
+"notes": [
+"skill row labels from registry skillsSourceText (not validated)"
+],
+"drafts": [
+{
+"source": "enemy-48-mush-golem-combat-v1",
+"cutIssues": [],
+"edgeTouch": [],
+"progressIssues": []
+}
+]
+}

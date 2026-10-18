@@ -1,0 +1,354 @@
+{
+"key": "boss_10_eidolon_light",
+"name": "原初レリカ・エイドロン（適応：光）",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/boss-10-light-combat-v1.png",
+"ppu": 94.86
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 267,
+"h": 167,
+"px": 86,
+"py": 166,
+"ms": 200
+},
+{
+"t": 0,
+"x": 269,
+"y": 0,
+"w": 296,
+"h": 168,
+"px": 93,
+"py": 167,
+"ms": 200
+},
+{
+"t": 0,
+"x": 567,
+"y": 0,
+"w": 293,
+"h": 165,
+"px": 106,
+"py": 164,
+"ms": 200
+},
+{
+"t": 0,
+"x": 862,
+"y": 0,
+"w": 271,
+"h": 168,
+"px": 102,
+"py": 167,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "天界の裁き",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1135,
+"y": 0,
+"w": 279,
+"h": 152,
+"px": 87,
+"py": 151,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1416,
+"y": 0,
+"w": 336,
+"h": 165,
+"px": 111,
+"py": 165,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 170,
+"w": 327,
+"h": 167,
+"px": 109,
+"py": 166,
+"ms": 160
+},
+{
+"t": 0,
+"x": 329,
+"y": 170,
+"w": 284,
+"h": 168,
+"px": 99,
+"py": 167,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "生命の波動",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 615,
+"y": 170,
+"w": 279,
+"h": 145,
+"px": 84,
+"py": 148,
+"ms": 160
+},
+{
+"t": 0,
+"x": 896,
+"y": 170,
+"w": 339,
+"h": 145,
+"px": 103,
+"py": 149,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1237,
+"y": 170,
+"w": 345,
+"h": 144,
+"px": 128,
+"py": 143,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1584,
+"y": 170,
+"w": 275,
+"h": 149,
+"px": 86,
+"py": 148,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "多重残像",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 340,
+"w": 284,
+"h": 187,
+"px": 107,
+"py": 189,
+"ms": 160
+},
+{
+"t": 0,
+"x": 286,
+"y": 340,
+"w": 321,
+"h": 191,
+"px": 145,
+"py": 192,
+"ms": 160
+},
+{
+"t": 0,
+"x": 609,
+"y": 340,
+"w": 350,
+"h": 193,
+"px": 161,
+"py": 192,
+"ms": 160
+},
+{
+"t": 0,
+"x": 961,
+"y": 340,
+"w": 284,
+"h": 188,
+"px": 123,
+"py": 192,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1247,
+"y": 340,
+"w": 278,
+"h": 149,
+"px": 121,
+"py": 151,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1527,
+"y": 340,
+"w": 293,
+"h": 152,
+"px": 124,
+"py": 152,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 535,
+"w": 313,
+"h": 140,
+"px": 145,
+"py": 143,
+"ms": 160
+},
+{
+"t": 0,
+"x": 315,
+"y": 535,
+"w": 287,
+"h": 158,
+"px": 135,
+"py": 157,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 604,
+"y": 535,
+"w": 300,
+"h": 133,
+"px": 89,
+"py": 132,
+"ms": 260
+},
+{
+"t": 0,
+"x": 906,
+"y": 535,
+"w": 315,
+"h": 133,
+"px": 106,
+"py": 133,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1223,
+"y": 535,
+"w": 333,
+"h": 118,
+"px": 137,
+"py": 118,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1558,
+"y": 535,
+"w": 330,
+"h": 100,
+"px": 146,
+"py": 100,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/boss-10-light-combat-v1.png"
+],
+"notes": [],
+"drafts": [
+{
+"source": "boss-10-light-combat-v1",
+"cutIssues": [
+"y3"
+],
+"edgeTouch": [
+"r1c1",
+"r1c2",
+"r1c3",
+"r1c4",
+"r2c1",
+"r2c3",
+"r2c4",
+"r3c2",
+"r3c3",
+"r3c4",
+"r4c2",
+"r4c3",
+"r4c4",
+"r5c4",
+"r6c1"
+],
+"progressIssues": [
+"Individual frame, anchor, continuity and source-board fidelity review required before delivery.",
+"Standalone skill FX and runtime integration are not included.",
+"Global gutter scan requires manual cell boundaries."
+]
+}
+]
+}

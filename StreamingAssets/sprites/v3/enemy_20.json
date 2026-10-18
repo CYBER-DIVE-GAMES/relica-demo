@@ -1,0 +1,341 @@
+{
+"key": "enemy_20",
+"name": "地虫",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-20-earth-worm-combat-v1.png",
+"ppu": 210.37
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 223,
+"h": 143,
+"px": 82,
+"py": 142,
+"ms": 200
+},
+{
+"t": 0,
+"x": 225,
+"y": 0,
+"w": 223,
+"h": 144,
+"px": 85,
+"py": 143,
+"ms": 200
+},
+{
+"t": 0,
+"x": 450,
+"y": 0,
+"w": 221,
+"h": 143,
+"px": 84,
+"py": 142,
+"ms": 200
+},
+{
+"t": 0,
+"x": 673,
+"y": 0,
+"w": 223,
+"h": 143,
+"px": 83,
+"py": 142,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "潜行突撃",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 898,
+"y": 0,
+"w": 216,
+"h": 152,
+"px": 79,
+"py": 167,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1116,
+"y": 0,
+"w": 234,
+"h": 146,
+"px": 90,
+"py": 156,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1352,
+"y": 0,
+"w": 255,
+"h": 155,
+"px": 97,
+"py": 154,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1609,
+"y": 0,
+"w": 240,
+"h": 142,
+"px": 98,
+"py": 157,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "粘液",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 157,
+"w": 235,
+"h": 153,
+"px": 105,
+"py": 163,
+"ms": 160
+},
+{
+"t": 0,
+"x": 237,
+"y": 157,
+"w": 231,
+"h": 153,
+"px": 112,
+"py": 159,
+"ms": 160
+},
+{
+"t": 0,
+"x": 470,
+"y": 157,
+"w": 240,
+"h": 140,
+"px": 114,
+"py": 146,
+"ms": 160
+},
+{
+"t": 0,
+"x": 712,
+"y": 157,
+"w": 223,
+"h": 146,
+"px": 106,
+"py": 145,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "地中化",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 937,
+"y": 157,
+"w": 229,
+"h": 161,
+"px": 67,
+"py": 164,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1168,
+"y": 157,
+"w": 227,
+"h": 154,
+"px": 63,
+"py": 153,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1397,
+"y": 157,
+"w": 202,
+"h": 131,
+"px": 49,
+"py": 130,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1601,
+"y": 157,
+"w": 191,
+"h": 130,
+"px": 53,
+"py": 130,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1794,
+"y": 157,
+"w": 232,
+"h": 167,
+"px": 149,
+"py": 166,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 326,
+"w": 221,
+"h": 150,
+"px": 152,
+"py": 153,
+"ms": 160
+},
+{
+"t": 0,
+"x": 223,
+"y": 326,
+"w": 221,
+"h": 141,
+"px": 153,
+"py": 143,
+"ms": 160
+},
+{
+"t": 0,
+"x": 446,
+"y": 326,
+"w": 223,
+"h": 141,
+"px": 151,
+"py": 143,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 671,
+"y": 326,
+"w": 222,
+"h": 155,
+"px": 48,
+"py": 154,
+"ms": 260
+},
+{
+"t": 0,
+"x": 895,
+"y": 326,
+"w": 233,
+"h": 131,
+"px": 58,
+"py": 131,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1130,
+"y": 326,
+"w": 247,
+"h": 120,
+"px": 58,
+"py": 119,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1379,
+"y": 326,
+"w": 243,
+"h": 108,
+"px": 67,
+"py": 108,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-20-earth-worm-combat-v1.png"
+],
+"notes": [
+"skill row labels from registry skillsSourceText (not validated)"
+],
+"drafts": [
+{
+"source": "enemy-20-earth-worm-combat-v1",
+"cutIssues": [
+"x3"
+],
+"edgeTouch": [
+"r2c3",
+"r2c4",
+"r6c3",
+"r6c4"
+],
+"progressIssues": []
+}
+]
+}

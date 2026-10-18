@@ -1,0 +1,341 @@
+{
+"key": "enemy_52",
+"name": "ガーディアンコア",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-52-guardian-core-combat-v1.png",
+"ppu": 197.1
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 168,
+"h": 200,
+"px": 124,
+"py": 199,
+"ms": 200
+},
+{
+"t": 0,
+"x": 170,
+"y": 0,
+"w": 169,
+"h": 202,
+"px": 107,
+"py": 201,
+"ms": 200
+},
+{
+"t": 0,
+"x": 341,
+"y": 0,
+"w": 169,
+"h": 206,
+"px": 139,
+"py": 205,
+"ms": 200
+},
+{
+"t": 0,
+"x": 512,
+"y": 0,
+"w": 163,
+"h": 200,
+"px": 151,
+"py": 199,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "コアレーザー",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 677,
+"y": 0,
+"w": 175,
+"h": 204,
+"px": 134,
+"py": 203,
+"ms": 160
+},
+{
+"t": 0,
+"x": 854,
+"y": 0,
+"w": 281,
+"h": 200,
+"px": 164,
+"py": 202,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1137,
+"y": 0,
+"w": 246,
+"h": 202,
+"px": 166,
+"py": 201,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1385,
+"y": 0,
+"w": 166,
+"h": 201,
+"px": 122,
+"py": 200,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "防衛リング",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1553,
+"y": 0,
+"w": 169,
+"h": 212,
+"px": 123,
+"py": 212,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1724,
+"y": 0,
+"w": 238,
+"h": 232,
+"px": 131,
+"py": 231,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 234,
+"w": 242,
+"h": 220,
+"px": 156,
+"py": 219,
+"ms": 160
+},
+{
+"t": 0,
+"x": 244,
+"y": 234,
+"w": 164,
+"h": 203,
+"px": 134,
+"py": 203,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "Overload",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 410,
+"y": 234,
+"w": 180,
+"h": 236,
+"px": 130,
+"py": 235,
+"ms": 160
+},
+{
+"t": 0,
+"x": 592,
+"y": 234,
+"w": 243,
+"h": 242,
+"px": 131,
+"py": 242,
+"ms": 160
+},
+{
+"t": 0,
+"x": 837,
+"y": 234,
+"w": 246,
+"h": 230,
+"px": 171,
+"py": 230,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1085,
+"y": 234,
+"w": 174,
+"h": 220,
+"px": 134,
+"py": 219,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1261,
+"y": 234,
+"w": 200,
+"h": 213,
+"px": 159,
+"py": 212,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1463,
+"y": 234,
+"w": 199,
+"h": 210,
+"px": 134,
+"py": 211,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1664,
+"y": 234,
+"w": 183,
+"h": 201,
+"px": 151,
+"py": 200,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1849,
+"y": 234,
+"w": 166,
+"h": 204,
+"px": 159,
+"py": 205,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 478,
+"w": 187,
+"h": 235,
+"px": 142,
+"py": 234,
+"ms": 260
+},
+{
+"t": 0,
+"x": 189,
+"y": 478,
+"w": 207,
+"h": 208,
+"px": 139,
+"py": 213,
+"ms": 260
+},
+{
+"t": 0,
+"x": 398,
+"y": 478,
+"w": 227,
+"h": 150,
+"px": 172,
+"py": 155,
+"ms": 260
+},
+{
+"t": 0,
+"x": 627,
+"y": 478,
+"w": 217,
+"h": 145,
+"px": 183,
+"py": 150,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-52-guardian-core-combat-v1.png"
+],
+"notes": [
+"skill row labels from registry skillsSourceText (not validated)"
+],
+"drafts": [
+{
+"source": "enemy-52-guardian-core-combat-v1",
+"cutIssues": [
+"x2"
+],
+"edgeTouch": [
+"r2c2",
+"r2c3",
+"r4c2",
+"r4c3"
+],
+"progressIssues": []
+}
+]
+}

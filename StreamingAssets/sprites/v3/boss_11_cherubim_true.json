@@ -1,0 +1,367 @@
+{
+"key": "boss_11_cherubim_true",
+"name": "終端管理体ケルビム（真の姿）",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/boss-11-true-combat-v1.png",
+"ppu": 102.86
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 263,
+"h": 182,
+"px": 115,
+"py": 181,
+"ms": 200
+},
+{
+"t": 0,
+"x": 265,
+"y": 0,
+"w": 269,
+"h": 181,
+"px": 86,
+"py": 180,
+"ms": 200
+},
+{
+"t": 0,
+"x": 536,
+"y": 0,
+"w": 272,
+"h": 182,
+"px": 122,
+"py": 181,
+"ms": 200
+},
+{
+"t": 0,
+"x": 810,
+"y": 0,
+"w": 271,
+"h": 182,
+"px": 91,
+"py": 181,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "世界の再構築",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1083,
+"y": 0,
+"w": 274,
+"h": 176,
+"px": 121,
+"py": 175,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1359,
+"y": 0,
+"w": 304,
+"h": 176,
+"px": 105,
+"py": 175,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1665,
+"y": 0,
+"w": 335,
+"h": 176,
+"px": 163,
+"py": 175,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 184,
+"w": 277,
+"h": 176,
+"px": 94,
+"py": 175,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "虚無の審判",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 279,
+"y": 184,
+"w": 320,
+"h": 170,
+"px": 149,
+"py": 169,
+"ms": 160
+},
+{
+"t": 0,
+"x": 601,
+"y": 184,
+"w": 290,
+"h": 175,
+"px": 95,
+"py": 174,
+"ms": 160
+},
+{
+"t": 0,
+"x": 893,
+"y": 184,
+"w": 264,
+"h": 175,
+"px": 116,
+"py": 174,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1159,
+"y": 184,
+"w": 276,
+"h": 175,
+"px": 98,
+"py": 174,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "天使の羽根",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1437,
+"y": 184,
+"w": 311,
+"h": 179,
+"px": 208,
+"py": 178,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 365,
+"w": 377,
+"h": 179,
+"px": 205,
+"py": 178,
+"ms": 160
+},
+{
+"t": 0,
+"x": 379,
+"y": 365,
+"w": 267,
+"h": 179,
+"px": 180,
+"py": 178,
+"ms": 160
+},
+{
+"t": 0,
+"x": 648,
+"y": 365,
+"w": 278,
+"h": 179,
+"px": 167,
+"py": 178,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 928,
+"y": 365,
+"w": 270,
+"h": 161,
+"px": 122,
+"py": 160,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1200,
+"y": 365,
+"w": 282,
+"h": 161,
+"px": 88,
+"py": 160,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1484,
+"y": 365,
+"w": 276,
+"h": 161,
+"px": 119,
+"py": 160,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1762,
+"y": 365,
+"w": 272,
+"h": 161,
+"px": 95,
+"py": 160,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 546,
+"w": 285,
+"h": 155,
+"px": 129,
+"py": 154,
+"ms": 260
+},
+{
+"t": 0,
+"x": 287,
+"y": 546,
+"w": 324,
+"h": 155,
+"px": 110,
+"py": 154,
+"ms": 260
+},
+{
+"t": 0,
+"x": 613,
+"y": 546,
+"w": 321,
+"h": 141,
+"px": 140,
+"py": 154,
+"ms": 260
+},
+{
+"t": 0,
+"x": 936,
+"y": 546,
+"w": 325,
+"h": 142,
+"px": 121,
+"py": 154,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/boss-11-true-combat-v1.png"
+],
+"notes": [],
+"drafts": [
+{
+"source": "boss-11-true-combat-v1",
+"cutIssues": [
+"y1",
+"y2",
+"y3",
+"y4",
+"y5"
+],
+"edgeTouch": [
+"r1c1",
+"r1c2",
+"r1c3",
+"r1c4",
+"r2c1",
+"r2c2",
+"r2c3",
+"r2c4",
+"r3c1",
+"r3c2",
+"r3c3",
+"r3c4",
+"r4c1",
+"r4c2",
+"r4c3",
+"r4c4",
+"r5c1",
+"r5c2",
+"r5c3",
+"r5c4",
+"r6c1",
+"r6c2",
+"r6c3",
+"r6c4"
+],
+"progressIssues": [
+"Individual frame, anchor, continuity and source-board fidelity review required before delivery.",
+"Standalone skill FX and runtime integration are not included.",
+"Global gutter scan requires manual cell boundaries."
+]
+}
+]
+}

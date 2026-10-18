@@ -1,0 +1,334 @@
+{
+"key": "enemy_22",
+"name": "機械兵（弓型）",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-22-bow-machine-combat-v1.png",
+"ppu": 238.89
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 152,
+"h": 215,
+"px": 75,
+"py": 214,
+"ms": 200
+},
+{
+"t": 0,
+"x": 154,
+"y": 0,
+"w": 153,
+"h": 217,
+"px": 65,
+"py": 216,
+"ms": 200
+},
+{
+"t": 0,
+"x": 309,
+"y": 0,
+"w": 155,
+"h": 217,
+"px": 78,
+"py": 216,
+"ms": 200
+},
+{
+"t": 0,
+"x": 466,
+"y": 0,
+"w": 147,
+"h": 216,
+"px": 73,
+"py": 216,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "ボルト射撃",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 615,
+"y": 0,
+"w": 155,
+"h": 218,
+"px": 72,
+"py": 219,
+"ms": 160
+},
+{
+"t": 0,
+"x": 772,
+"y": 0,
+"w": 178,
+"h": 228,
+"px": 70,
+"py": 227,
+"ms": 160
+},
+{
+"t": 0,
+"x": 952,
+"y": 0,
+"w": 206,
+"h": 239,
+"px": 96,
+"py": 238,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1160,
+"y": 0,
+"w": 157,
+"h": 221,
+"px": 74,
+"py": 220,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "三連射",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1319,
+"y": 0,
+"w": 161,
+"h": 228,
+"px": 83,
+"py": 227,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1482,
+"y": 0,
+"w": 179,
+"h": 235,
+"px": 90,
+"py": 234,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1663,
+"y": 0,
+"w": 172,
+"h": 231,
+"px": 97,
+"py": 230,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1837,
+"y": 0,
+"w": 177,
+"h": 220,
+"px": 93,
+"py": 219,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "照準\\",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 241,
+"w": 162,
+"h": 228,
+"px": 73,
+"py": 227,
+"ms": 160
+},
+{
+"t": 0,
+"x": 164,
+"y": 241,
+"w": 165,
+"h": 230,
+"px": 66,
+"py": 229,
+"ms": 160
+},
+{
+"t": 0,
+"x": 331,
+"y": 241,
+"w": 164,
+"h": 234,
+"px": 76,
+"py": 233,
+"ms": 160
+},
+{
+"t": 0,
+"x": 497,
+"y": 241,
+"w": 155,
+"h": 217,
+"px": 68,
+"py": 216,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 654,
+"y": 241,
+"w": 161,
+"h": 214,
+"px": 120,
+"py": 214,
+"ms": 160
+},
+{
+"t": 0,
+"x": 817,
+"y": 241,
+"w": 134,
+"h": 186,
+"px": 81,
+"py": 185,
+"ms": 160
+},
+{
+"t": 0,
+"x": 953,
+"y": 241,
+"w": 143,
+"h": 206,
+"px": 108,
+"py": 205,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1098,
+"y": 241,
+"w": 152,
+"h": 229,
+"px": 111,
+"py": 228,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1252,
+"y": 241,
+"w": 168,
+"h": 207,
+"px": 91,
+"py": 211,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1422,
+"y": 241,
+"w": 191,
+"h": 154,
+"px": 73,
+"py": 160,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1615,
+"y": 241,
+"w": 197,
+"h": 137,
+"px": 108,
+"py": 136,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1814,
+"y": 241,
+"w": 210,
+"h": 102,
+"px": 112,
+"py": 107,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-22-bow-machine-combat-v1.png"
+],
+"notes": [
+"skill row labels from registry skillsSourceText (not validated)"
+],
+"drafts": [
+{
+"source": "enemy-22-bow-machine-combat-v1",
+"cutIssues": [],
+"edgeTouch": [],
+"progressIssues": []
+}
+]
+}

@@ -1,0 +1,122 @@
+{
+"key": "mia",
+"name": "ミア・少年期",
+"status": "design",
+"facing": "front",
+"textures": [
+{
+"file": "tex/mia-young-pixel-v2.png",
+"ppu": 330.0
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "採用方向の描画。待機・瞬き。動作の細部は調整中。",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "design",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 279,
+"h": 518,
+"px": 140,
+"py": 517,
+"ms": 2400
+},
+{
+"t": 0,
+"x": 281,
+"y": 0,
+"w": 278,
+"h": 518,
+"px": 139,
+"py": 517,
+"ms": 110
+},
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 279,
+"h": 518,
+"px": 140,
+"py": 517,
+"ms": 1000
+}
+]
+},
+{
+"name": "talk",
+"label": "会話の主要ポーズ。中割り・輪郭の安定化は未完了。",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "design",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 279,
+"h": 518,
+"px": 140,
+"py": 517,
+"ms": 600
+},
+{
+"t": 0,
+"x": 561,
+"y": 0,
+"w": 278,
+"h": 515,
+"px": 139,
+"py": 514,
+"ms": 180
+},
+{
+"t": 0,
+"x": 841,
+"y": 0,
+"w": 350,
+"h": 516,
+"px": 139,
+"py": 515,
+"ms": 750
+},
+{
+"t": 0,
+"x": 561,
+"y": 0,
+"w": 278,
+"h": 515,
+"px": 139,
+"py": 514,
+"ms": 180
+},
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 279,
+"h": 518,
+"px": 140,
+"py": 517,
+"ms": 600
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v1/mia-young-pixel-v2.png"
+],
+"notes": [
+"motion-v1 four-pose design study (idle/talk only)"
+]
+}

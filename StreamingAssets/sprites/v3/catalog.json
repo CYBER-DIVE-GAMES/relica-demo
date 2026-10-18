@@ -1,0 +1,588 @@
+{
+ "version": 1,
+ "built": "2026-10-05",
+ "entries": [
+  {
+   "key": "bern",
+   "file": "bern.json",
+   "status": "design",
+   "name": "坑夫ベルン"
+  },
+  {
+   "key": "boss_01_grave",
+   "file": "boss_01_grave.json",
+   "status": "delivery",
+   "name": "教会執行兵グレイヴ"
+  },
+  {
+   "key": "boss_02_gradon",
+   "file": "boss_02_gradon.json",
+   "status": "delivery",
+   "name": "岩喰獣グラドン"
+  },
+  {
+   "key": "boss_02_gradon_armorbreak",
+   "file": "boss_02_gradon_armorbreak.json",
+   "status": "delivery",
+   "name": "岩喰獣グラドン（甲殻破壊）"
+  },
+  {
+   "key": "boss_03_chimera_beast",
+   "file": "boss_03_chimera_beast.json",
+   "status": "delivery",
+   "name": "実験獣キマイラ BEAST"
+  },
+  {
+   "key": "boss_03_chimera_shell",
+   "file": "boss_03_chimera_shell.json",
+   "status": "delivery",
+   "name": "実験獣キマイラ SHELL"
+  },
+  {
+   "key": "boss_03_chimera_wing",
+   "file": "boss_03_chimera_wing.json",
+   "status": "delivery",
+   "name": "実験獣キマイラ WING"
+  },
+  {
+   "key": "boss_05_varum_armored",
+   "file": "boss_05_varum_armored.json",
+   "status": "candidate",
+   "name": "監獄守護機ヴァルム（装甲）"
+  },
+  {
+   "key": "boss_05_varum_core",
+   "file": "boss_05_varum_core.json",
+   "status": "candidate",
+   "name": "監獄守護機ヴァルム（コア露出）"
+  },
+  {
+   "key": "boss_07_yugra_core",
+   "file": "boss_07_yugra_core.json",
+   "status": "draft",
+   "name": "森林管理体ユグラ（コア露出）"
+  },
+  {
+   "key": "boss_07_yugra_pollen",
+   "file": "boss_07_yugra_pollen.json",
+   "status": "draft",
+   "name": "森林管理体ユグラ（花粉）"
+  },
+  {
+   "key": "boss_07_yugra_root",
+   "file": "boss_07_yugra_root.json",
+   "status": "draft",
+   "name": "森林管理体ユグラ（根）"
+  },
+  {
+   "key": "boss_08_vares",
+   "file": "boss_08_vares.json",
+   "status": "draft",
+   "name": "聖槍ヴァレス"
+  },
+  {
+   "key": "boss_09_atlas_artillery",
+   "file": "boss_09_atlas_artillery.json",
+   "status": "draft",
+   "name": "天空機兵アトラス（砲撃）"
+  },
+  {
+   "key": "boss_09_atlas_flight",
+   "file": "boss_09_atlas_flight.json",
+   "status": "draft",
+   "name": "天空機兵アトラス（飛行）"
+  },
+  {
+   "key": "boss_09_atlas_ground",
+   "file": "boss_09_atlas_ground.json",
+   "status": "draft",
+   "name": "天空機兵アトラス（地上）"
+  },
+  {
+   "key": "boss_10_eidolon",
+   "file": "boss_10_eidolon.json",
+   "status": "draft",
+   "name": "原初レリカ・エイドロン"
+  },
+  {
+   "key": "boss_10_eidolon_fire",
+   "file": "boss_10_eidolon_fire.json",
+   "status": "draft",
+   "name": "原初レリカ・エイドロン（適応：炎）"
+  },
+  {
+   "key": "boss_10_eidolon_light",
+   "file": "boss_10_eidolon_light.json",
+   "status": "draft",
+   "name": "原初レリカ・エイドロン（適応：光）"
+  },
+  {
+   "key": "boss_10_eidolon_rock",
+   "file": "boss_10_eidolon_rock.json",
+   "status": "draft",
+   "name": "原初レリカ・エイドロン（適応：岩）"
+  },
+  {
+   "key": "boss_11_cherubim_outer",
+   "file": "boss_11_cherubim_outer.json",
+   "status": "draft",
+   "name": "終端管理体ケルビム（外皮）"
+  },
+  {
+   "key": "boss_11_cherubim_released",
+   "file": "boss_11_cherubim_released.json",
+   "status": "draft",
+   "name": "終端管理体ケルビム（解放）"
+  },
+  {
+   "key": "boss_11_cherubim_true",
+   "file": "boss_11_cherubim_true.json",
+   "status": "draft",
+   "name": "終端管理体ケルビム（真の姿）"
+  },
+  {
+   "key": "dan",
+   "file": "dan.json",
+   "status": "design",
+   "name": "ダン"
+  },
+  {
+   "key": "elder",
+   "file": "elder.json",
+   "status": "design",
+   "name": "井戸端の婆さん"
+  },
+  {
+   "key": "elena",
+   "file": "elena.json",
+   "status": "design",
+   "name": "エレナ"
+  },
+  {
+   "key": "enemy_01",
+   "file": "enemy_01.json",
+   "status": "delivery",
+   "name": "フォルリーフ"
+  },
+  {
+   "key": "enemy_07",
+   "file": "enemy_07.json",
+   "status": "draft",
+   "name": "森狼（アルファ）"
+  },
+  {
+   "key": "enemy_08",
+   "file": "enemy_08.json",
+   "status": "draft",
+   "name": "ホーンビートル"
+  },
+  {
+   "key": "enemy_09",
+   "file": "enemy_09.json",
+   "status": "draft",
+   "name": "フォレストバード"
+  },
+  {
+   "key": "enemy_10",
+   "file": "enemy_10.json",
+   "status": "draft",
+   "name": "マンドラゴラ"
+  },
+  {
+   "key": "enemy_11",
+   "file": "enemy_11.json",
+   "status": "draft",
+   "name": "ゴブリン"
+  },
+  {
+   "key": "enemy_12",
+   "file": "enemy_12.json",
+   "status": "draft",
+   "name": "ゴブリン（槍）"
+  },
+  {
+   "key": "enemy_13",
+   "file": "enemy_13.json",
+   "status": "draft",
+   "name": "ゴブリン（盾）"
+  },
+  {
+   "key": "enemy_14",
+   "file": "enemy_14.json",
+   "status": "draft",
+   "name": "コボルト"
+  },
+  {
+   "key": "enemy_15",
+   "file": "enemy_15.json",
+   "status": "draft",
+   "name": "ロックリザード"
+  },
+  {
+   "key": "enemy_16",
+   "file": "enemy_16.json",
+   "status": "draft",
+   "name": "ストーンゴーレム（小）"
+  },
+  {
+   "key": "enemy_17",
+   "file": "enemy_17.json",
+   "status": "draft",
+   "name": "クリスタルゴーレム"
+  },
+  {
+   "key": "enemy_18",
+   "file": "enemy_18.json",
+   "status": "draft",
+   "name": "洞窟コウモリ"
+  },
+  {
+   "key": "enemy_19",
+   "file": "enemy_19.json",
+   "status": "draft",
+   "name": "ジャイアントバット"
+  },
+  {
+   "key": "enemy_20",
+   "file": "enemy_20.json",
+   "status": "draft",
+   "name": "地虫"
+  },
+  {
+   "key": "enemy_21",
+   "file": "enemy_21.json",
+   "status": "draft",
+   "name": "機械兵（歩行型）"
+  },
+  {
+   "key": "enemy_22",
+   "file": "enemy_22.json",
+   "status": "draft",
+   "name": "機械兵（弓型）"
+  },
+  {
+   "key": "enemy_23",
+   "file": "enemy_23.json",
+   "status": "draft",
+   "name": "監視ドローン"
+  },
+  {
+   "key": "enemy_24",
+   "file": "enemy_24.json",
+   "status": "draft",
+   "name": "セルリーパー"
+  },
+  {
+   "key": "enemy_25",
+   "file": "enemy_25.json",
+   "status": "draft",
+   "name": "エンシェントナイト"
+  },
+  {
+   "key": "enemy_26",
+   "file": "enemy_26.json",
+   "status": "draft",
+   "name": "廃棄猟犬"
+  },
+  {
+   "key": "enemy_27",
+   "file": "enemy_27.json",
+   "status": "draft",
+   "name": "プロトタイプ"
+  },
+  {
+   "key": "enemy_28",
+   "file": "enemy_28.json",
+   "status": "draft",
+   "name": "試作生命体"
+  },
+  {
+   "key": "enemy_29",
+   "file": "enemy_29.json",
+   "status": "draft",
+   "name": "ガーディアン"
+  },
+  {
+   "key": "enemy_30",
+   "file": "enemy_30.json",
+   "status": "draft",
+   "name": "エナジーウィスプ"
+  },
+  {
+   "key": "enemy_31",
+   "file": "enemy_31.json",
+   "status": "draft",
+   "name": "サンドスライム"
+  },
+  {
+   "key": "enemy_32",
+   "file": "enemy_32.json",
+   "status": "draft",
+   "name": "スコーピオン"
+  },
+  {
+   "key": "enemy_33",
+   "file": "enemy_33.json",
+   "status": "draft",
+   "name": "スナークル"
+  },
+  {
+   "key": "enemy_34",
+   "file": "enemy_34.json",
+   "status": "draft",
+   "name": "ボーンハイエナ"
+  },
+  {
+   "key": "enemy_35",
+   "file": "enemy_35.json",
+   "status": "draft",
+   "name": "サンドゴースト"
+  },
+  {
+   "key": "enemy_36",
+   "file": "enemy_36.json",
+   "status": "draft",
+   "name": "ミラージュホース"
+  },
+  {
+   "key": "enemy_37",
+   "file": "enemy_37.json",
+   "status": "draft",
+   "name": "ドライプラント"
+  },
+  {
+   "key": "enemy_38",
+   "file": "enemy_38.json",
+   "status": "draft",
+   "name": "ロックマンティス"
+  },
+  {
+   "key": "enemy_39",
+   "file": "enemy_39.json",
+   "status": "draft",
+   "name": "スコルピオンスネーク"
+  },
+  {
+   "key": "enemy_40",
+   "file": "enemy_40.json",
+   "status": "draft",
+   "name": "砂の巨人"
+  },
+  {
+   "key": "enemy_41",
+   "file": "enemy_41.json",
+   "status": "draft",
+   "name": "トレントスプラウト"
+  },
+  {
+   "key": "enemy_42",
+   "file": "enemy_42.json",
+   "status": "draft",
+   "name": "ポイズンフラワー"
+  },
+  {
+   "key": "enemy_43",
+   "file": "enemy_43.json",
+   "status": "draft",
+   "name": "ウィスプ"
+  },
+  {
+   "key": "enemy_44",
+   "file": "enemy_44.json",
+   "status": "draft",
+   "name": "ウッドゴーレム"
+  },
+  {
+   "key": "enemy_45",
+   "file": "enemy_45.json",
+   "status": "draft",
+   "name": "リーフワイバーン"
+  },
+  {
+   "key": "enemy_46",
+   "file": "enemy_46.json",
+   "status": "draft",
+   "name": "カゲムシ"
+  },
+  {
+   "key": "enemy_47",
+   "file": "enemy_47.json",
+   "status": "draft",
+   "name": "フォレストベア"
+  },
+  {
+   "key": "enemy_48",
+   "file": "enemy_48.json",
+   "status": "draft",
+   "name": "マッシュゴーレム"
+  },
+  {
+   "key": "enemy_49",
+   "file": "enemy_49.json",
+   "status": "draft",
+   "name": "ツタクリーパー"
+  },
+  {
+   "key": "enemy_50",
+   "file": "enemy_50.json",
+   "status": "draft",
+   "name": "エルダースタッグ"
+  },
+  {
+   "key": "enemy_51",
+   "file": "enemy_51.json",
+   "status": "draft",
+   "name": "ルインシェイド"
+  },
+  {
+   "key": "enemy_52",
+   "file": "enemy_52.json",
+   "status": "draft",
+   "name": "ガーディアンコア"
+  },
+  {
+   "key": "enemy_53",
+   "file": "enemy_53.json",
+   "status": "draft",
+   "name": "クリスタルスラグ"
+  },
+  {
+   "key": "enemy_54",
+   "file": "enemy_54.json",
+   "status": "draft",
+   "name": "アビスフィッシュ"
+  },
+  {
+   "key": "enemy_55",
+   "file": "enemy_55.json",
+   "status": "draft",
+   "name": "メモリアハウンド"
+  },
+  {
+   "key": "enemy_56",
+   "file": "enemy_56.json",
+   "status": "draft",
+   "name": "ヴォイドフラワー"
+  },
+  {
+   "key": "enemy_57",
+   "file": "enemy_57.json",
+   "status": "draft",
+   "name": "セレスドローン"
+  },
+  {
+   "key": "enemy_58",
+   "file": "enemy_58.json",
+   "status": "draft",
+   "name": "データゴースト"
+  },
+  {
+   "key": "enemy_59",
+   "file": "enemy_59.json",
+   "status": "draft",
+   "name": "コアスパイダー"
+  },
+  {
+   "key": "enemy_60",
+   "file": "enemy_60.json",
+   "status": "draft",
+   "name": "エクリプスワーム"
+  },
+  {
+   "key": "gardo",
+   "file": "gardo.json",
+   "status": "design",
+   "name": "ガルド・少年期"
+  },
+  {
+   "key": "gardo_adult",
+   "file": "gardo_adult.json",
+   "status": "design",
+   "name": "ガルド・青年期"
+  },
+  {
+   "key": "gardo_beast_adult",
+   "file": "gardo_beast_adult.json",
+   "status": "design",
+   "name": "ガルド・獣人型"
+  },
+  {
+   "key": "lisa",
+   "file": "lisa.json",
+   "status": "design",
+   "name": "道具屋リサ"
+  },
+  {
+   "key": "mia",
+   "file": "mia.json",
+   "status": "design",
+   "name": "ミア・少年期"
+  },
+  {
+   "key": "mia_adult",
+   "file": "mia_adult.json",
+   "status": "design",
+   "name": "ミア・青年期"
+  },
+  {
+   "key": "noah",
+   "file": "noah.json",
+   "status": "design",
+   "name": "ノア"
+  },
+  {
+   "key": "rain",
+   "file": "rain.json",
+   "status": "design",
+   "name": "レイン・少年期"
+  },
+  {
+   "key": "rain_adult",
+   "file": "rain_adult.json",
+   "status": "design",
+   "name": "レイン・青年期"
+  },
+  {
+   "key": "visual_06_shadow_wolf",
+   "file": "visual_06_shadow_wolf.json",
+   "status": "draft",
+   "name": "ウルフ"
+  },
+  {
+   "key": "visual_bubble_slime",
+   "file": "visual_bubble_slime.json",
+   "status": "draft",
+   "name": "バブルスライム"
+  },
+  {
+   "key": "visual_forest_rabbit",
+   "file": "visual_forest_rabbit.json",
+   "status": "draft",
+   "name": "森のウサギ"
+  },
+  {
+   "key": "visual_leaf_rabbit",
+   "file": "visual_leaf_rabbit.json",
+   "status": "draft",
+   "name": "リーフラビット"
+  },
+  {
+   "key": "visual_slime_blue",
+   "file": "visual_slime_blue.json",
+   "status": "draft",
+   "name": "スライム（緑・赤・青）"
+  },
+  {
+   "key": "visual_slime_green",
+   "file": "visual_slime_green.json",
+   "status": "draft",
+   "name": "スライム（緑・赤・青）"
+  },
+  {
+   "key": "visual_slime_red",
+   "file": "visual_slime_red.json",
+   "status": "draft",
+   "name": "スライム（緑・赤・青）"
+  }
+ ]
+}

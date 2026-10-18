@@ -1,0 +1,334 @@
+{
+"key": "enemy_23",
+"name": "監視ドローン",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-23-surveillance-drone-combat-v1.png",
+"ppu": 275.56
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 182,
+"h": 188,
+"px": 79,
+"py": 188,
+"ms": 200
+},
+{
+"t": 0,
+"x": 184,
+"y": 0,
+"w": 185,
+"h": 180,
+"px": 81,
+"py": 182,
+"ms": 200
+},
+{
+"t": 0,
+"x": 371,
+"y": 0,
+"w": 179,
+"h": 179,
+"px": 90,
+"py": 178,
+"ms": 200
+},
+{
+"t": 0,
+"x": 552,
+"y": 0,
+"w": 203,
+"h": 177,
+"px": 92,
+"py": 178,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "レーザー",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 757,
+"y": 0,
+"w": 185,
+"h": 188,
+"px": 80,
+"py": 192,
+"ms": 160
+},
+{
+"t": 0,
+"x": 944,
+"y": 0,
+"w": 219,
+"h": 189,
+"px": 105,
+"py": 192,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1165,
+"y": 0,
+"w": 201,
+"h": 193,
+"px": 103,
+"py": 192,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1368,
+"y": 0,
+"w": 189,
+"h": 190,
+"px": 91,
+"py": 193,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "マーク",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1559,
+"y": 0,
+"w": 168,
+"h": 191,
+"px": 87,
+"py": 206,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1729,
+"y": 0,
+"w": 194,
+"h": 196,
+"px": 91,
+"py": 208,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 198,
+"w": 221,
+"h": 194,
+"px": 116,
+"py": 193,
+"ms": 160
+},
+{
+"t": 0,
+"x": 223,
+"y": 198,
+"w": 182,
+"h": 173,
+"px": 97,
+"py": 184,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "警報",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 407,
+"y": 198,
+"w": 178,
+"h": 187,
+"px": 91,
+"py": 205,
+"ms": 160
+},
+{
+"t": 0,
+"x": 587,
+"y": 198,
+"w": 216,
+"h": 199,
+"px": 107,
+"py": 201,
+"ms": 160
+},
+{
+"t": 0,
+"x": 805,
+"y": 198,
+"w": 213,
+"h": 196,
+"px": 105,
+"py": 195,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1020,
+"y": 198,
+"w": 180,
+"h": 178,
+"px": 95,
+"py": 188,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1202,
+"y": 198,
+"w": 178,
+"h": 182,
+"px": 16,
+"py": 197,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1382,
+"y": 198,
+"w": 173,
+"h": 171,
+"px": 12,
+"py": 170,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1557,
+"y": 198,
+"w": 189,
+"h": 171,
+"px": 30,
+"py": 185,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1748,
+"y": 198,
+"w": 172,
+"h": 177,
+"px": 30,
+"py": 195,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 399,
+"w": 188,
+"h": 195,
+"px": 134,
+"py": 194,
+"ms": 260
+},
+{
+"t": 0,
+"x": 190,
+"y": 399,
+"w": 208,
+"h": 146,
+"px": 151,
+"py": 161,
+"ms": 260
+},
+{
+"t": 0,
+"x": 400,
+"y": 399,
+"w": 202,
+"h": 115,
+"px": 149,
+"py": 133,
+"ms": 260
+},
+{
+"t": 0,
+"x": 604,
+"y": 399,
+"w": 204,
+"h": 105,
+"px": 154,
+"py": 120,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-23-surveillance-drone-combat-v1.png"
+],
+"notes": [
+"skill row labels from registry skillsSourceText (not validated)"
+],
+"drafts": [
+{
+"source": "enemy-23-surveillance-drone-combat-v1",
+"cutIssues": [],
+"edgeTouch": [],
+"progressIssues": []
+}
+]
+}

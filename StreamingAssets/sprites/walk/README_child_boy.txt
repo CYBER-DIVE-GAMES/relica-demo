@@ -1,0 +1,1 @@
+child_boy.png: generated 2026-10-18 from rain.png (cols 0,2,4,6) by recolour (hair chestnut, shirt moss, trousers brown). Script: boy.py (scratchpad). Replaces mob-a1-shepherd (bearded adult) for who=child.

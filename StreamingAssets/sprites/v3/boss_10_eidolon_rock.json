@@ -1,0 +1,359 @@
+{
+"key": "boss_10_eidolon_rock",
+"name": "原初レリカ・エイドロン（適応：岩）",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/boss-10-rock-combat-v1.png",
+"ppu": 94.29
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 290,
+"h": 167,
+"px": 98,
+"py": 166,
+"ms": 200
+},
+{
+"t": 0,
+"x": 292,
+"y": 0,
+"w": 302,
+"h": 167,
+"px": 82,
+"py": 166,
+"ms": 200
+},
+{
+"t": 0,
+"x": 596,
+"y": 0,
+"w": 296,
+"h": 167,
+"px": 85,
+"py": 166,
+"ms": 200
+},
+{
+"t": 0,
+"x": 894,
+"y": 0,
+"w": 299,
+"h": 167,
+"px": 81,
+"py": 166,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "大地の息吹",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1195,
+"y": 0,
+"w": 304,
+"h": 150,
+"px": 113,
+"py": 149,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1501,
+"y": 0,
+"w": 310,
+"h": 167,
+"px": 95,
+"py": 166,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 169,
+"w": 303,
+"h": 175,
+"px": 97,
+"py": 174,
+"ms": 160
+},
+{
+"t": 0,
+"x": 305,
+"y": 169,
+"w": 298,
+"h": 162,
+"px": 84,
+"py": 161,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "生命の波動",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 605,
+"y": 169,
+"w": 287,
+"h": 148,
+"px": 104,
+"py": 148,
+"ms": 160
+},
+{
+"t": 0,
+"x": 894,
+"y": 169,
+"w": 342,
+"h": 144,
+"px": 113,
+"py": 146,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1238,
+"y": 169,
+"w": 321,
+"h": 156,
+"px": 96,
+"py": 155,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1561,
+"y": 169,
+"w": 293,
+"h": 155,
+"px": 79,
+"py": 154,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "天界の裁き",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 346,
+"w": 310,
+"h": 155,
+"px": 116,
+"py": 154,
+"ms": 160
+},
+{
+"t": 0,
+"x": 312,
+"y": 346,
+"w": 327,
+"h": 160,
+"px": 118,
+"py": 159,
+"ms": 160
+},
+{
+"t": 0,
+"x": 641,
+"y": 346,
+"w": 335,
+"h": 157,
+"px": 117,
+"py": 156,
+"ms": 160
+},
+{
+"t": 0,
+"x": 978,
+"y": 346,
+"w": 295,
+"h": 154,
+"px": 81,
+"py": 153,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1275,
+"y": 346,
+"w": 293,
+"h": 166,
+"px": 124,
+"py": 165,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1570,
+"y": 346,
+"w": 273,
+"h": 151,
+"px": 97,
+"py": 150,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 514,
+"w": 308,
+"h": 154,
+"px": 125,
+"py": 153,
+"ms": 160
+},
+{
+"t": 0,
+"x": 310,
+"y": 514,
+"w": 299,
+"h": 159,
+"px": 103,
+"py": 158,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 611,
+"y": 514,
+"w": 306,
+"h": 156,
+"px": 106,
+"py": 157,
+"ms": 260
+},
+{
+"t": 0,
+"x": 919,
+"y": 514,
+"w": 302,
+"h": 148,
+"px": 92,
+"py": 147,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1223,
+"y": 514,
+"w": 335,
+"h": 133,
+"px": 117,
+"py": 134,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1560,
+"y": 514,
+"w": 327,
+"h": 122,
+"px": 113,
+"py": 124,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/boss-10-rock-combat-v1.png"
+],
+"notes": [],
+"drafts": [
+{
+"source": "boss-10-rock-combat-v1",
+"cutIssues": [
+"y1"
+],
+"edgeTouch": [
+"r1c1",
+"r1c2",
+"r1c3",
+"r1c4",
+"r2c1",
+"r2c2",
+"r2c3",
+"r2c4",
+"r3c2",
+"r3c3",
+"r3c4",
+"r4c1",
+"r4c2",
+"r4c3",
+"r4c4",
+"r5c1",
+"r5c2",
+"r5c3",
+"r5c4",
+"r6c1"
+],
+"progressIssues": [
+"Individual frame, anchor, continuity and source-board fidelity review required before delivery.",
+"Standalone skill FX and runtime integration are not included.",
+"Global gutter scan requires manual cell boundaries."
+]
+}
+]
+}

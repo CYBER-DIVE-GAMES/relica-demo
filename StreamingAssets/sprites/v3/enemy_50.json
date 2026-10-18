@@ -1,0 +1,341 @@
+{
+"key": "enemy_50",
+"name": "エルダースタッグ",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-50-elder-stag-combat-v1.png",
+"ppu": 202.56
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 161,
+"h": 239,
+"px": 88,
+"py": 238,
+"ms": 200
+},
+{
+"t": 0,
+"x": 163,
+"y": 0,
+"w": 166,
+"h": 236,
+"px": 96,
+"py": 235,
+"ms": 200
+},
+{
+"t": 0,
+"x": 331,
+"y": 0,
+"w": 151,
+"h": 234,
+"px": 83,
+"py": 233,
+"ms": 200
+},
+{
+"t": 0,
+"x": 484,
+"y": 0,
+"w": 142,
+"h": 234,
+"px": 89,
+"py": 233,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "聖角",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 628,
+"y": 0,
+"w": 150,
+"h": 228,
+"px": 77,
+"py": 231,
+"ms": 160
+},
+{
+"t": 0,
+"x": 780,
+"y": 0,
+"w": 172,
+"h": 238,
+"px": 93,
+"py": 239,
+"ms": 160
+},
+{
+"t": 0,
+"x": 954,
+"y": 0,
+"w": 195,
+"h": 241,
+"px": 100,
+"py": 242,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1151,
+"y": 0,
+"w": 203,
+"h": 240,
+"px": 122,
+"py": 239,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "森の加護",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1356,
+"y": 0,
+"w": 187,
+"h": 236,
+"px": 164,
+"py": 235,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1545,
+"y": 0,
+"w": 192,
+"h": 237,
+"px": 157,
+"py": 236,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1739,
+"y": 0,
+"w": 237,
+"h": 220,
+"px": 165,
+"py": 222,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 243,
+"w": 223,
+"h": 230,
+"px": 198,
+"py": 232,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "生命光",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 225,
+"y": 243,
+"w": 176,
+"h": 246,
+"px": 95,
+"py": 246,
+"ms": 160
+},
+{
+"t": 0,
+"x": 403,
+"y": 243,
+"w": 178,
+"h": 245,
+"px": 98,
+"py": 245,
+"ms": 160
+},
+{
+"t": 0,
+"x": 583,
+"y": 243,
+"w": 218,
+"h": 239,
+"px": 109,
+"py": 239,
+"ms": 160
+},
+{
+"t": 0,
+"x": 803,
+"y": 243,
+"w": 163,
+"h": 246,
+"px": 96,
+"py": 245,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 968,
+"y": 243,
+"w": 178,
+"h": 227,
+"px": 104,
+"py": 226,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1148,
+"y": 243,
+"w": 205,
+"h": 193,
+"px": 120,
+"py": 192,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1355,
+"y": 243,
+"w": 195,
+"h": 166,
+"px": 105,
+"py": 169,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1552,
+"y": 243,
+"w": 206,
+"h": 162,
+"px": 129,
+"py": 164,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1760,
+"y": 243,
+"w": 204,
+"h": 159,
+"px": 118,
+"py": 164,
+"ms": 260
+},
+{
+"t": 0,
+"x": 0,
+"y": 491,
+"w": 198,
+"h": 132,
+"px": 120,
+"py": 137,
+"ms": 260
+},
+{
+"t": 0,
+"x": 200,
+"y": 491,
+"w": 250,
+"h": 109,
+"px": 123,
+"py": 108,
+"ms": 260
+},
+{
+"t": 0,
+"x": 452,
+"y": 491,
+"w": 230,
+"h": 84,
+"px": 143,
+"py": 86,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-50-elder-stag-combat-v1.png"
+],
+"notes": [
+"skill row labels from registry skillsSourceText (not validated)"
+],
+"drafts": [
+{
+"source": "enemy-50-elder-stag-combat-v1",
+"cutIssues": [
+"x3"
+],
+"edgeTouch": [
+"r3c3",
+"r3c4",
+"r6c3",
+"r6c4"
+],
+"progressIssues": []
+}
+]
+}

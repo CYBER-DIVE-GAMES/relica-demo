@@ -1,0 +1,339 @@
+{
+"key": "enemy_56",
+"name": "ヴォイドフラワー",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-56-void-flower-combat-v1.png",
+"ppu": 270.0
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 184,
+"h": 240,
+"px": 113,
+"py": 239,
+"ms": 200
+},
+{
+"t": 0,
+"x": 186,
+"y": 0,
+"w": 188,
+"h": 245,
+"px": 107,
+"py": 244,
+"ms": 200
+},
+{
+"t": 0,
+"x": 376,
+"y": 0,
+"w": 193,
+"h": 240,
+"px": 121,
+"py": 239,
+"ms": 200
+},
+{
+"t": 0,
+"x": 571,
+"y": 0,
+"w": 189,
+"h": 245,
+"px": 113,
+"py": 244,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "虚無胞子",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 762,
+"y": 0,
+"w": 172,
+"h": 243,
+"px": 103,
+"py": 243,
+"ms": 160
+},
+{
+"t": 0,
+"x": 936,
+"y": 0,
+"w": 204,
+"h": 246,
+"px": 119,
+"py": 246,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1142,
+"y": 0,
+"w": 227,
+"h": 243,
+"px": 137,
+"py": 242,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1371,
+"y": 0,
+"w": 190,
+"h": 220,
+"px": 106,
+"py": 219,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "吸収根",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1563,
+"y": 0,
+"w": 186,
+"h": 233,
+"px": 98,
+"py": 232,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1751,
+"y": 0,
+"w": 249,
+"h": 200,
+"px": 123,
+"py": 204,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 248,
+"w": 237,
+"h": 208,
+"px": 119,
+"py": 208,
+"ms": 160
+},
+{
+"t": 0,
+"x": 239,
+"y": 248,
+"w": 218,
+"h": 227,
+"px": 137,
+"py": 231,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "闇花爆発\\",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 459,
+"y": 248,
+"w": 189,
+"h": 254,
+"px": 110,
+"py": 258,
+"ms": 160
+},
+{
+"t": 0,
+"x": 650,
+"y": 248,
+"w": 249,
+"h": 276,
+"px": 129,
+"py": 276,
+"ms": 160
+},
+{
+"t": 0,
+"x": 901,
+"y": 248,
+"w": 235,
+"h": 278,
+"px": 132,
+"py": 277,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1138,
+"y": 248,
+"w": 198,
+"h": 257,
+"px": 112,
+"py": 262,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1338,
+"y": 248,
+"w": 187,
+"h": 226,
+"px": 96,
+"py": 232,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1527,
+"y": 248,
+"w": 175,
+"h": 214,
+"px": 84,
+"py": 213,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1704,
+"y": 248,
+"w": 185,
+"h": 214,
+"px": 102,
+"py": 213,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 528,
+"w": 181,
+"h": 220,
+"px": 96,
+"py": 223,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 183,
+"y": 528,
+"w": 223,
+"h": 204,
+"px": 51,
+"py": 203,
+"ms": 260
+},
+{
+"t": 0,
+"x": 408,
+"y": 528,
+"w": 229,
+"h": 165,
+"px": 40,
+"py": 170,
+"ms": 260
+},
+{
+"t": 0,
+"x": 639,
+"y": 528,
+"w": 239,
+"h": 138,
+"px": 60,
+"py": 142,
+"ms": 260
+},
+{
+"t": 0,
+"x": 880,
+"y": 528,
+"w": 233,
+"h": 102,
+"px": 58,
+"py": 106,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-56-void-flower-combat-v1.png"
+],
+"notes": [
+"skill row labels from registry skillsSourceText (not validated)"
+],
+"drafts": [
+{
+"source": "enemy-56-void-flower-combat-v1",
+"cutIssues": [
+"x3"
+],
+"edgeTouch": [
+"r3c3",
+"r3c4"
+],
+"progressIssues": []
+}
+]
+}

@@ -1,0 +1,122 @@
+{
+"key": "gardo_beast_adult",
+"name": "ガルド・獣人型",
+"status": "design",
+"facing": "front",
+"textures": [
+{
+"file": "tex/gald-beast-pixel-v3.png",
+"ppu": 215.0
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "立ち姿・瞬きの確認用。動作の細部は調整中。",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "design",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 401,
+"h": 564,
+"px": 204,
+"py": 563,
+"ms": 3850
+},
+{
+"t": 0,
+"x": 403,
+"y": 0,
+"w": 401,
+"h": 564,
+"px": 204,
+"py": 563,
+"ms": 110
+},
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 401,
+"h": 564,
+"px": 204,
+"py": 563,
+"ms": 800
+}
+]
+},
+{
+"name": "talk",
+"label": "会話ポーズの確認用。滑らかな中割り・全方向動作は未完成。",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "design",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 401,
+"h": 564,
+"px": 204,
+"py": 563,
+"ms": 300
+},
+{
+"t": 0,
+"x": 806,
+"y": 0,
+"w": 401,
+"h": 566,
+"px": 204,
+"py": 565,
+"ms": 230
+},
+{
+"t": 0,
+"x": 1209,
+"y": 0,
+"w": 475,
+"h": 566,
+"px": 203,
+"py": 565,
+"ms": 450
+},
+{
+"t": 0,
+"x": 806,
+"y": 0,
+"w": 401,
+"h": 566,
+"px": 204,
+"py": 565,
+"ms": 230
+},
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 401,
+"h": 564,
+"px": 204,
+"py": 563,
+"ms": 350
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v1/gald-beast-pixel-v3.png"
+],
+"notes": [
+"motion-v1 four-pose design study (idle/talk only)"
+]
+}

@@ -1,0 +1,122 @@
+{
+"key": "bern",
+"name": "坑夫ベルン",
+"status": "design",
+"facing": "front",
+"textures": [
+{
+"file": "tex/bern-pixel-v1.png",
+"ppu": 266.67
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "立ち姿・瞬きの確認用。動作の細部は調整中。",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "design",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 298,
+"h": 555,
+"px": 174,
+"py": 554,
+"ms": 4450
+},
+{
+"t": 0,
+"x": 300,
+"y": 0,
+"w": 300,
+"h": 555,
+"px": 175,
+"py": 554,
+"ms": 110
+},
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 298,
+"h": 555,
+"px": 174,
+"py": 554,
+"ms": 800
+}
+]
+},
+{
+"name": "talk",
+"label": "会話ポーズの確認用。滑らかな中割り・全方向動作は未完成。",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "design",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 298,
+"h": 555,
+"px": 174,
+"py": 554,
+"ms": 300
+},
+{
+"t": 0,
+"x": 602,
+"y": 0,
+"w": 269,
+"h": 532,
+"px": 144,
+"py": 531,
+"ms": 230
+},
+{
+"t": 0,
+"x": 873,
+"y": 0,
+"w": 377,
+"h": 532,
+"px": 164,
+"py": 531,
+"ms": 450
+},
+{
+"t": 0,
+"x": 602,
+"y": 0,
+"w": 269,
+"h": 532,
+"px": 144,
+"py": 531,
+"ms": 230
+},
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 298,
+"h": 555,
+"px": 174,
+"py": 554,
+"ms": 350
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v1/bern-pixel-v1.png"
+],
+"notes": [
+"motion-v1 four-pose design study (idle/talk only)"
+]
+}

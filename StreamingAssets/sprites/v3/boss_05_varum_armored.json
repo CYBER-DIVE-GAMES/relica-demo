@@ -1,0 +1,438 @@
+{
+"key": "boss_05_varum_armored",
+"name": "監獄守護機ヴァルム（装甲）",
+"status": "candidate",
+"facing": "left",
+"textures": [
+{
+"file": "tex/boss-05-base-combat-v3.png",
+"ppu": 164.0
+},
+{
+"file": "tex/boss-05-base-defeat-v1.png",
+"ppu": 390.0
+},
+{
+"file": "tex/boss-05-base-combat-extra-v1.png",
+"ppu": 260.0
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "candidate",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 362,
+"h": 192,
+"px": 192,
+"py": 178,
+"ms": 240
+},
+{
+"t": 0,
+"x": 362,
+"y": 0,
+"w": 362,
+"h": 192,
+"px": 166,
+"py": 178,
+"ms": 200
+},
+{
+"t": 0,
+"x": 724,
+"y": 0,
+"w": 362,
+"h": 192,
+"px": 180,
+"py": 178,
+"ms": 240
+},
+{
+"t": 0,
+"x": 1086,
+"y": 0,
+"w": 362,
+"h": 192,
+"px": 168,
+"py": 178,
+"ms": 200
+}
+]
+},
+{
+"name": "iron_arm_strike",
+"label": "鉄腕叩き",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "candidate",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 192,
+"w": 362,
+"h": 190,
+"px": 192,
+"py": 174,
+"ms": 240
+},
+{
+"t": 0,
+"x": 362,
+"y": 192,
+"w": 362,
+"h": 190,
+"px": 166,
+"py": 174,
+"ms": 180
+},
+{
+"t": 0,
+"x": 724,
+"y": 192,
+"w": 362,
+"h": 190,
+"px": 180,
+"py": 174,
+"ms": 100
+},
+{
+"t": 0,
+"x": 1086,
+"y": 192,
+"w": 362,
+"h": 190,
+"px": 168,
+"py": 174,
+"ms": 260
+}
+]
+},
+{
+"name": "energy_cannon",
+"label": "エネルギー砲・本体",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "candidate",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 382,
+"w": 362,
+"h": 172,
+"px": 192,
+"py": 163,
+"ms": 200
+},
+{
+"t": 0,
+"x": 362,
+"y": 382,
+"w": 362,
+"h": 172,
+"px": 166,
+"py": 163,
+"ms": 220
+},
+{
+"t": 0,
+"x": 724,
+"y": 382,
+"w": 362,
+"h": 172,
+"px": 180,
+"py": 163,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1086,
+"y": 382,
+"w": 362,
+"h": 172,
+"px": 168,
+"py": 163,
+"ms": 300
+}
+]
+},
+{
+"name": "ground_collapse",
+"label": "地面崩壊・本体",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "candidate",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 554,
+"w": 362,
+"h": 173,
+"px": 192,
+"py": 161,
+"ms": 240
+},
+{
+"t": 0,
+"x": 362,
+"y": 554,
+"w": 362,
+"h": 173,
+"px": 166,
+"py": 161,
+"ms": 140
+},
+{
+"t": 0,
+"x": 724,
+"y": 554,
+"w": 362,
+"h": 173,
+"px": 180,
+"py": 161,
+"ms": 180
+},
+{
+"t": 0,
+"x": 1086,
+"y": 554,
+"w": 362,
+"h": 173,
+"px": 168,
+"py": 161,
+"ms": 260
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "candidate",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 727,
+"w": 362,
+"h": 171,
+"px": 192,
+"py": 160,
+"ms": 100
+},
+{
+"t": 0,
+"x": 362,
+"y": 727,
+"w": 362,
+"h": 171,
+"px": 166,
+"py": 160,
+"ms": 140
+},
+{
+"t": 0,
+"x": 724,
+"y": 727,
+"w": 362,
+"h": 171,
+"px": 180,
+"py": 160,
+"ms": 180
+},
+{
+"t": 0,
+"x": 1086,
+"y": 727,
+"w": 362,
+"h": 171,
+"px": 168,
+"py": 160,
+"ms": 260
+}
+]
+},
+{
+"name": "defeat",
+"label": "撃破・消灯修正",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "candidate",
+"frames": [
+{
+"t": 1,
+"x": 0,
+"y": 0,
+"w": 543,
+"h": 724,
+"px": 272,
+"py": 586,
+"ms": 220
+},
+{
+"t": 1,
+"x": 543,
+"y": 0,
+"w": 543,
+"h": 724,
+"px": 272,
+"py": 593,
+"ms": 260
+},
+{
+"t": 1,
+"x": 1086,
+"y": 0,
+"w": 543,
+"h": 724,
+"px": 272,
+"py": 598,
+"ms": 320
+},
+{
+"t": 1,
+"x": 1629,
+"y": 0,
+"w": 543,
+"h": 724,
+"px": 272,
+"py": 604,
+"ms": 480
+}
+]
+},
+{
+"name": "restraint_light",
+"label": "拘束光・本体",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "candidate",
+"frames": [
+{
+"t": 2,
+"x": 0,
+"y": 362,
+"w": 375,
+"h": 303,
+"px": 183,
+"py": 269,
+"ms": 180
+},
+{
+"t": 2,
+"x": 375,
+"y": 362,
+"w": 364,
+"h": 303,
+"px": 193,
+"py": 269,
+"ms": 220
+},
+{
+"t": 2,
+"x": 739,
+"y": 362,
+"w": 408,
+"h": 303,
+"px": 212,
+"py": 269,
+"ms": 260
+},
+{
+"t": 2,
+"x": 1147,
+"y": 362,
+"w": 389,
+"h": 303,
+"px": 187,
+"py": 269,
+"ms": 220
+}
+]
+},
+{
+"name": "break_stagger",
+"label": "ブレイク・復帰",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "candidate",
+"frames": [
+{
+"t": 2,
+"x": 0,
+"y": 665,
+"w": 400,
+"h": 359,
+"px": 196,
+"py": 274,
+"ms": 180
+},
+{
+"t": 2,
+"x": 400,
+"y": 665,
+"w": 365,
+"h": 359,
+"px": 183,
+"py": 274,
+"ms": 220
+},
+{
+"t": 2,
+"x": 765,
+"y": 665,
+"w": 383,
+"h": 359,
+"px": 189,
+"py": 274,
+"ms": 260
+},
+{
+"t": 2,
+"x": 1148,
+"y": 665,
+"w": 388,
+"h": 359,
+"px": 193,
+"py": 274,
+"ms": 220
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/prepared/boss-05-base-combat-v3",
+"production/characters/ps1-v3/motion-v2/prepared/boss-05-base-defeat-v1",
+"production/characters/ps1-v3/motion-v2/prepared/boss-05-base-combat-extra-v1"
+],
+"notes": [
+"defeat of base-combat-v3 excluded (chest light relights); defeat from base-defeat-v1"
+]
+}

@@ -1,0 +1,344 @@
+{
+"key": "enemy_13",
+"name": "ゴブリン（盾）",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-13-goblin-shield-combat-v1.png",
+"ppu": 206.67
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 203,
+"h": 188,
+"px": 147,
+"py": 187,
+"ms": 200
+},
+{
+"t": 0,
+"x": 205,
+"y": 0,
+"w": 189,
+"h": 186,
+"px": 130,
+"py": 185,
+"ms": 200
+},
+{
+"t": 0,
+"x": 396,
+"y": 0,
+"w": 194,
+"h": 188,
+"px": 147,
+"py": 187,
+"ms": 200
+},
+{
+"t": 0,
+"x": 592,
+"y": 0,
+"w": 195,
+"h": 184,
+"px": 145,
+"py": 183,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "盾打ち",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 789,
+"y": 0,
+"w": 222,
+"h": 187,
+"px": 165,
+"py": 186,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1013,
+"y": 0,
+"w": 214,
+"h": 176,
+"px": 152,
+"py": 175,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1229,
+"y": 0,
+"w": 254,
+"h": 166,
+"px": 196,
+"py": 165,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1485,
+"y": 0,
+"w": 184,
+"h": 185,
+"px": 155,
+"py": 184,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "防御陣",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1671,
+"y": 0,
+"w": 175,
+"h": 147,
+"px": 132,
+"py": 148,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1848,
+"y": 0,
+"w": 179,
+"h": 153,
+"px": 134,
+"py": 153,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 190,
+"w": 181,
+"h": 143,
+"px": 119,
+"py": 142,
+"ms": 160
+},
+{
+"t": 0,
+"x": 183,
+"y": 190,
+"w": 172,
+"h": 168,
+"px": 133,
+"py": 167,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "かばう\\",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 357,
+"y": 190,
+"w": 229,
+"h": 184,
+"px": 187,
+"py": 184,
+"ms": 160
+},
+{
+"t": 0,
+"x": 588,
+"y": 190,
+"w": 227,
+"h": 180,
+"px": 184,
+"py": 180,
+"ms": 160
+},
+{
+"t": 0,
+"x": 817,
+"y": 190,
+"w": 238,
+"h": 183,
+"px": 215,
+"py": 182,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1057,
+"y": 190,
+"w": 182,
+"h": 180,
+"px": 174,
+"py": 180,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1241,
+"y": 190,
+"w": 179,
+"h": 205,
+"px": 122,
+"py": 207,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1422,
+"y": 190,
+"w": 195,
+"h": 196,
+"px": 139,
+"py": 196,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1619,
+"y": 190,
+"w": 204,
+"h": 182,
+"px": 155,
+"py": 181,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1825,
+"y": 190,
+"w": 182,
+"h": 196,
+"px": 143,
+"py": 198,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 397,
+"w": 195,
+"h": 155,
+"px": 102,
+"py": 160,
+"ms": 260
+},
+{
+"t": 0,
+"x": 197,
+"y": 397,
+"w": 234,
+"h": 121,
+"px": 130,
+"py": 124,
+"ms": 260
+},
+{
+"t": 0,
+"x": 433,
+"y": 397,
+"w": 245,
+"h": 106,
+"px": 130,
+"py": 105,
+"ms": 260
+},
+{
+"t": 0,
+"x": 680,
+"y": 397,
+"w": 227,
+"h": 97,
+"px": 126,
+"py": 100,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-13-goblin-shield-combat-v1.png"
+],
+"notes": [
+"skill row labels from registry skillsSourceText (not validated)"
+],
+"drafts": [
+{
+"source": "enemy-13-goblin-shield-combat-v1",
+"cutIssues": [
+"x1",
+"x2"
+],
+"edgeTouch": [
+"r2c2",
+"r2c3",
+"r4c2",
+"r4c3",
+"r6c2",
+"r6c3"
+],
+"progressIssues": []
+}
+]
+}

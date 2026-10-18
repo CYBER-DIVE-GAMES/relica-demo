@@ -1,0 +1,334 @@
+{
+"key": "enemy_26",
+"name": "廃棄猟犬",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-26-discarded-hound-combat-v1.png",
+"ppu": 170.0
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 208,
+"h": 145,
+"px": 88,
+"py": 151,
+"ms": 200
+},
+{
+"t": 0,
+"x": 210,
+"y": 0,
+"w": 214,
+"h": 155,
+"px": 97,
+"py": 155,
+"ms": 200
+},
+{
+"t": 0,
+"x": 426,
+"y": 0,
+"w": 217,
+"h": 151,
+"px": 93,
+"py": 150,
+"ms": 200
+},
+{
+"t": 0,
+"x": 645,
+"y": 0,
+"w": 208,
+"h": 151,
+"px": 93,
+"py": 150,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "鉄牙",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 855,
+"y": 0,
+"w": 211,
+"h": 149,
+"px": 87,
+"py": 148,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1068,
+"y": 0,
+"w": 214,
+"h": 156,
+"px": 100,
+"py": 161,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1284,
+"y": 0,
+"w": 245,
+"h": 157,
+"px": 113,
+"py": 165,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1531,
+"y": 0,
+"w": 227,
+"h": 133,
+"px": 111,
+"py": 132,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "Lock-on",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1760,
+"y": 0,
+"w": 220,
+"h": 149,
+"px": 85,
+"py": 152,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 159,
+"w": 212,
+"h": 151,
+"px": 86,
+"py": 150,
+"ms": 160
+},
+{
+"t": 0,
+"x": 214,
+"y": 159,
+"w": 225,
+"h": 149,
+"px": 88,
+"py": 150,
+"ms": 160
+},
+{
+"t": 0,
+"x": 441,
+"y": 159,
+"w": 212,
+"h": 148,
+"px": 90,
+"py": 151,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "自爆突進",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 655,
+"y": 159,
+"w": 214,
+"h": 151,
+"px": 76,
+"py": 158,
+"ms": 160
+},
+{
+"t": 0,
+"x": 871,
+"y": 159,
+"w": 226,
+"h": 160,
+"px": 85,
+"py": 163,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1099,
+"y": 159,
+"w": 230,
+"h": 166,
+"px": 87,
+"py": 165,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1331,
+"y": 159,
+"w": 218,
+"h": 166,
+"px": 92,
+"py": 165,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1551,
+"y": 159,
+"w": 202,
+"h": 174,
+"px": 75,
+"py": 177,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1755,
+"y": 159,
+"w": 217,
+"h": 154,
+"px": 105,
+"py": 157,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 335,
+"w": 223,
+"h": 130,
+"px": 94,
+"py": 135,
+"ms": 160
+},
+{
+"t": 0,
+"x": 225,
+"y": 335,
+"w": 208,
+"h": 148,
+"px": 90,
+"py": 147,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 435,
+"y": 335,
+"w": 228,
+"h": 156,
+"px": 125,
+"py": 155,
+"ms": 260
+},
+{
+"t": 0,
+"x": 665,
+"y": 335,
+"w": 238,
+"h": 119,
+"px": 132,
+"py": 119,
+"ms": 260
+},
+{
+"t": 0,
+"x": 905,
+"y": 335,
+"w": 239,
+"h": 94,
+"px": 125,
+"py": 93,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1146,
+"y": 335,
+"w": 224,
+"h": 83,
+"px": 131,
+"py": 82,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-26-discarded-hound-combat-v1.png"
+],
+"notes": [
+"skill row labels from registry skillsSourceText (not validated)"
+],
+"drafts": [
+{
+"source": "enemy-26-discarded-hound-combat-v1",
+"cutIssues": [],
+"edgeTouch": [],
+"progressIssues": []
+}
+]
+}

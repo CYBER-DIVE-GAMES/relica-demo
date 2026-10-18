@@ -1,0 +1,334 @@
+{
+"key": "enemy_08",
+"name": "ホーンビートル",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-08-beetle-combat-v1.png",
+"ppu": 184.44
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 227,
+"h": 166,
+"px": 101,
+"py": 166,
+"ms": 200
+},
+{
+"t": 0,
+"x": 229,
+"y": 0,
+"w": 230,
+"h": 160,
+"px": 99,
+"py": 159,
+"ms": 200
+},
+{
+"t": 0,
+"x": 461,
+"y": 0,
+"w": 228,
+"h": 168,
+"px": 91,
+"py": 168,
+"ms": 200
+},
+{
+"t": 0,
+"x": 691,
+"y": 0,
+"w": 226,
+"h": 162,
+"px": 126,
+"py": 162,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "角突進",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 919,
+"y": 0,
+"w": 248,
+"h": 132,
+"px": 127,
+"py": 131,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1169,
+"y": 0,
+"w": 239,
+"h": 132,
+"px": 131,
+"py": 132,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1410,
+"y": 0,
+"w": 305,
+"h": 151,
+"px": 138,
+"py": 152,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1717,
+"y": 0,
+"w": 223,
+"h": 164,
+"px": 137,
+"py": 163,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "甲殻",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 170,
+"w": 217,
+"h": 159,
+"px": 107,
+"py": 162,
+"ms": 160
+},
+{
+"t": 0,
+"x": 219,
+"y": 170,
+"w": 191,
+"h": 139,
+"px": 110,
+"py": 143,
+"ms": 160
+},
+{
+"t": 0,
+"x": 412,
+"y": 170,
+"w": 190,
+"h": 123,
+"px": 103,
+"py": 122,
+"ms": 160
+},
+{
+"t": 0,
+"x": 604,
+"y": 170,
+"w": 214,
+"h": 167,
+"px": 129,
+"py": 166,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "挟撃",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 820,
+"y": 170,
+"w": 210,
+"h": 190,
+"px": 160,
+"py": 195,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1032,
+"y": 170,
+"w": 217,
+"h": 156,
+"px": 161,
+"py": 160,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1251,
+"y": 170,
+"w": 229,
+"h": 170,
+"px": 169,
+"py": 169,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1482,
+"y": 170,
+"w": 222,
+"h": 173,
+"px": 198,
+"py": 177,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1706,
+"y": 170,
+"w": 207,
+"h": 180,
+"px": 86,
+"py": 185,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 362,
+"w": 226,
+"h": 136,
+"px": 97,
+"py": 146,
+"ms": 160
+},
+{
+"t": 0,
+"x": 228,
+"y": 362,
+"w": 235,
+"h": 117,
+"px": 101,
+"py": 125,
+"ms": 160
+},
+{
+"t": 0,
+"x": 465,
+"y": 362,
+"w": 221,
+"h": 162,
+"px": 123,
+"py": 161,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 688,
+"y": 362,
+"w": 237,
+"h": 151,
+"px": 130,
+"py": 154,
+"ms": 260
+},
+{
+"t": 0,
+"x": 927,
+"y": 362,
+"w": 239,
+"h": 145,
+"px": 136,
+"py": 149,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1168,
+"y": 362,
+"w": 254,
+"h": 137,
+"px": 129,
+"py": 136,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1424,
+"y": 362,
+"w": 226,
+"h": 115,
+"px": 154,
+"py": 115,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-08-beetle-combat-v1.png"
+],
+"notes": [
+"skill row labels from registry skillsSourceText (not validated)"
+],
+"drafts": [
+{
+"source": "enemy-08-beetle-combat-v1",
+"cutIssues": [],
+"edgeTouch": [],
+"progressIssues": []
+}
+]
+}

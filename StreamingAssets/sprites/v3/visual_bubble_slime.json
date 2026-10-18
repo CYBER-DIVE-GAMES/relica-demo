@@ -1,0 +1,334 @@
+{
+"key": "visual_bubble_slime",
+"name": "バブルスライム",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/visual-bubble-slime-combat-v1.png",
+"ppu": 223.33
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 168,
+"h": 189,
+"px": 80,
+"py": 189,
+"ms": 200
+},
+{
+"t": 0,
+"x": 170,
+"y": 0,
+"w": 169,
+"h": 179,
+"px": 72,
+"py": 178,
+"ms": 200
+},
+{
+"t": 0,
+"x": 341,
+"y": 0,
+"w": 158,
+"h": 203,
+"px": 80,
+"py": 205,
+"ms": 200
+},
+{
+"t": 0,
+"x": 501,
+"y": 0,
+"w": 159,
+"h": 177,
+"px": 89,
+"py": 179,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 662,
+"y": 0,
+"w": 178,
+"h": 184,
+"px": 82,
+"py": 186,
+"ms": 160
+},
+{
+"t": 0,
+"x": 842,
+"y": 0,
+"w": 171,
+"h": 175,
+"px": 79,
+"py": 175,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1015,
+"y": 0,
+"w": 193,
+"h": 202,
+"px": 92,
+"py": 213,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1210,
+"y": 0,
+"w": 194,
+"h": 175,
+"px": 118,
+"py": 174,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1406,
+"y": 0,
+"w": 166,
+"h": 189,
+"px": 80,
+"py": 189,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1574,
+"y": 0,
+"w": 184,
+"h": 183,
+"px": 73,
+"py": 182,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1760,
+"y": 0,
+"w": 207,
+"h": 177,
+"px": 99,
+"py": 176,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 205,
+"w": 165,
+"h": 190,
+"px": 91,
+"py": 189,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 167,
+"y": 205,
+"w": 166,
+"h": 198,
+"px": 81,
+"py": 198,
+"ms": 160
+},
+{
+"t": 0,
+"x": 335,
+"y": 205,
+"w": 193,
+"h": 163,
+"px": 92,
+"py": 165,
+"ms": 160
+},
+{
+"t": 0,
+"x": 530,
+"y": 205,
+"w": 182,
+"h": 160,
+"px": 93,
+"py": 159,
+"ms": 160
+},
+{
+"t": 0,
+"x": 714,
+"y": 205,
+"w": 161,
+"h": 181,
+"px": 92,
+"py": 181,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 877,
+"y": 205,
+"w": 170,
+"h": 191,
+"px": 89,
+"py": 192,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1049,
+"y": 205,
+"w": 171,
+"h": 208,
+"px": 79,
+"py": 214,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1222,
+"y": 205,
+"w": 176,
+"h": 186,
+"px": 97,
+"py": 187,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1400,
+"y": 205,
+"w": 166,
+"h": 187,
+"px": 101,
+"py": 186,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1568,
+"y": 205,
+"w": 177,
+"h": 177,
+"px": 80,
+"py": 177,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1747,
+"y": 205,
+"w": 216,
+"h": 148,
+"px": 103,
+"py": 148,
+"ms": 260
+},
+{
+"t": 0,
+"x": 0,
+"y": 415,
+"w": 228,
+"h": 136,
+"px": 105,
+"py": 135,
+"ms": 260
+},
+{
+"t": 0,
+"x": 230,
+"y": 415,
+"w": 211,
+"h": 124,
+"px": 108,
+"py": 123,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/visual-bubble-slime-combat-v1.png"
+],
+"notes": [
+"slot 03 appearance only; NOT bound to enemy_03 (skill DB conflict)"
+],
+"drafts": [
+{
+"source": "visual-bubble-slime-combat-v1",
+"cutIssues": [],
+"edgeTouch": [],
+"progressIssues": []
+}
+]
+}

@@ -1,0 +1,142 @@
+{
+"key": "mia_adult",
+"name": "ミア・青年期",
+"status": "design",
+"facing": "front",
+"textures": [
+{
+"file": "tex/mia-adult-pixel-v3.png",
+"ppu": 241.15
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機・瞬き。人物ごとに間隔を調整。動作の細部は調整中。",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "design",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 295,
+"h": 579,
+"px": 174,
+"py": 578,
+"ms": 3300
+},
+{
+"t": 0,
+"x": 297,
+"y": 0,
+"w": 292,
+"h": 579,
+"px": 174,
+"py": 578,
+"ms": 110
+},
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 295,
+"h": 579,
+"px": 174,
+"py": 578,
+"ms": 900
+}
+]
+},
+{
+"name": "talk",
+"label": "身振り→発話→手を戻す。話しかけるボタンでは一度再生して待機に戻る。中割りは調整中。",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "design",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 295,
+"h": 579,
+"px": 174,
+"py": 578,
+"ms": 300
+},
+{
+"t": 0,
+"x": 591,
+"y": 0,
+"w": 295,
+"h": 579,
+"px": 174,
+"py": 578,
+"ms": 140
+},
+{
+"t": 0,
+"x": 888,
+"y": 0,
+"w": 292,
+"h": 579,
+"px": 174,
+"py": 578,
+"ms": 420
+},
+{
+"t": 0,
+"x": 591,
+"y": 0,
+"w": 295,
+"h": 579,
+"px": 174,
+"py": 578,
+"ms": 170
+},
+{
+"t": 0,
+"x": 888,
+"y": 0,
+"w": 292,
+"h": 579,
+"px": 174,
+"py": 578,
+"ms": 360
+},
+{
+"t": 0,
+"x": 591,
+"y": 0,
+"w": 295,
+"h": 579,
+"px": 174,
+"py": 578,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 295,
+"h": 579,
+"px": 174,
+"py": 578,
+"ms": 450
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v1/mia-adult-pixel-v3.png"
+],
+"notes": [
+"motion-v1 four-pose design study (idle/talk only)"
+]
+}

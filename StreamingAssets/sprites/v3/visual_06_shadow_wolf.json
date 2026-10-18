@@ -1,0 +1,336 @@
+{
+"key": "visual_06_shadow_wolf",
+"name": "ウルフ",
+"status": "draft",
+"facing": "left",
+"textures": [
+{
+"file": "tex/enemy-06-shadow-wolf-combat-v1.png",
+"ppu": 182.22
+}
+],
+"clips": [
+{
+"name": "idle",
+"label": "待機",
+"loop": true,
+"end": "loop",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 0,
+"y": 0,
+"w": 195,
+"h": 165,
+"px": 94,
+"py": 164,
+"ms": 200
+},
+{
+"t": 0,
+"x": 197,
+"y": 0,
+"w": 195,
+"h": 166,
+"px": 93,
+"py": 165,
+"ms": 200
+},
+{
+"t": 0,
+"x": 394,
+"y": 0,
+"w": 195,
+"h": 164,
+"px": 92,
+"py": 164,
+"ms": 200
+},
+{
+"t": 0,
+"x": 591,
+"y": 0,
+"w": 190,
+"h": 165,
+"px": 86,
+"py": 164,
+"ms": 200
+}
+]
+},
+{
+"name": "skill1",
+"label": "",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 783,
+"y": 0,
+"w": 210,
+"h": 135,
+"px": 102,
+"py": 134,
+"ms": 160
+},
+{
+"t": 0,
+"x": 995,
+"y": 0,
+"w": 225,
+"h": 134,
+"px": 114,
+"py": 133,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1222,
+"y": 0,
+"w": 221,
+"h": 135,
+"px": 115,
+"py": 134,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1445,
+"y": 0,
+"w": 207,
+"h": 129,
+"px": 97,
+"py": 128,
+"ms": 160
+}
+]
+},
+{
+"name": "skill2",
+"label": "",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1654,
+"y": 0,
+"w": 199,
+"h": 172,
+"px": 83,
+"py": 171,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 174,
+"w": 205,
+"h": 195,
+"px": 73,
+"py": 194,
+"ms": 160
+},
+{
+"t": 0,
+"x": 207,
+"y": 174,
+"w": 200,
+"h": 223,
+"px": 76,
+"py": 222,
+"ms": 160
+},
+{
+"t": 0,
+"x": 409,
+"y": 174,
+"w": 194,
+"h": 172,
+"px": 74,
+"py": 171,
+"ms": 160
+}
+]
+},
+{
+"name": "skill3",
+"label": "",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 605,
+"y": 174,
+"w": 193,
+"h": 143,
+"px": 77,
+"py": 145,
+"ms": 160
+},
+{
+"t": 0,
+"x": 800,
+"y": 174,
+"w": 223,
+"h": 159,
+"px": 100,
+"py": 196,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1025,
+"y": 174,
+"w": 239,
+"h": 142,
+"px": 110,
+"py": 141,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1266,
+"y": 174,
+"w": 195,
+"h": 163,
+"px": 70,
+"py": 162,
+"ms": 160
+}
+]
+},
+{
+"name": "hit",
+"label": "被弾",
+"loop": false,
+"end": "return",
+"returnTo": "idle",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 1463,
+"y": 174,
+"w": 199,
+"h": 188,
+"px": 80,
+"py": 187,
+"ms": 160
+},
+{
+"t": 0,
+"x": 1664,
+"y": 174,
+"w": 206,
+"h": 185,
+"px": 98,
+"py": 184,
+"ms": 160
+},
+{
+"t": 0,
+"x": 0,
+"y": 399,
+"w": 224,
+"h": 142,
+"px": 121,
+"py": 141,
+"ms": 160
+},
+{
+"t": 0,
+"x": 226,
+"y": 399,
+"w": 193,
+"h": 162,
+"px": 87,
+"py": 161,
+"ms": 160
+}
+]
+},
+{
+"name": "defeat",
+"label": "戦闘不能",
+"loop": false,
+"end": "hold",
+"returnTo": "",
+"direction": "",
+"status": "draft",
+"frames": [
+{
+"t": 0,
+"x": 421,
+"y": 399,
+"w": 206,
+"h": 156,
+"px": 158,
+"py": 155,
+"ms": 260
+},
+{
+"t": 0,
+"x": 629,
+"y": 399,
+"w": 227,
+"h": 112,
+"px": 184,
+"py": 118,
+"ms": 260
+},
+{
+"t": 0,
+"x": 858,
+"y": 399,
+"w": 236,
+"h": 92,
+"px": 191,
+"py": 103,
+"ms": 260
+},
+{
+"t": 0,
+"x": 1096,
+"y": 399,
+"w": 235,
+"h": 82,
+"px": 189,
+"py": 93,
+"ms": 500
+}
+]
+}
+],
+"sources": [
+"production/characters/ps1-v3/motion-v2/sources/enemy-06-shadow-wolf-combat-v1.png"
+],
+"notes": [
+"slot 06 appearance only; NOT bound to enemy_06 (skill DB conflict)"
+],
+"drafts": [
+{
+"source": "enemy-06-shadow-wolf-combat-v1",
+"cutIssues": [],
+"edgeTouch": [],
+"progressIssues": [
+"外見は資料06ウルフと対応。DB名称・技の対応は未確定。"
+]
+}
+]
+}
