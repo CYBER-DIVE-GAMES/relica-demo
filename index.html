@@ -44,7 +44,7 @@
   #bB { right: calc(102px + env(safe-area-inset-right)); bottom: 22px; width: 58px; height: 58px; }
   #bM { right: calc(22px + env(safe-area-inset-right)); top: 14px; width: 58px; height: 36px; border-radius: 10px; font-size: 13px; }
   #bC { right: calc(90px + env(safe-area-inset-right)); top: 14px; width: 58px; height: 36px; border-radius: 10px; font-size: 13px; }
-  #bF { left: calc(18px + env(safe-area-inset-left)); top: 14px; width: 40px; height: 36px; border-radius: 10px; font-size: 16px; }
+  #bF { right: calc(158px + env(safe-area-inset-right)); top: 14px; width: 40px; height: 36px; border-radius: 10px; font-size: 16px; }
 </style>
 </head>
 <body>
@@ -129,9 +129,9 @@
 
   var config = {
     arguments: [],
-    dataUrl: "Build/d77e16e1b2fa84406814cc64d57dfdd9.data.unityweb",
+    dataUrl: "Build/b7dff2ec7536e070e46a84f418510dd9.data.unityweb",
     frameworkUrl: "Build/813d9b6f0e03d2b347516327552bb7a4.framework.js.unityweb",
-    codeUrl: "Build/cb39b3d36bf732d51e356b0222059810.wasm.unityweb",
+    codeUrl: "Build/3376472571a7717a11b37b69d0751094.wasm.unityweb",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "DIP Games",
     productName: "RELICA",
@@ -142,7 +142,7 @@
   if (touch) config.devicePixelRatio = Math.min(window.devicePixelRatio || 1, 1.5);
 
   var s = document.createElement('script');
-  s.src = "Build/75eed4c318cbea77a31d658dec9f2efe.loader.js";
+  s.src = "Build/b83ca194f5f244dc79841b44ee1bf2d0.loader.js";
   s.onload = function () {
     createUnityInstance(canvas, config, function (p) { document.getElementById('fill').style.width = (100 * p) + '%'; })
       .then(function () { document.getElementById('loading').style.display = 'none'; })
