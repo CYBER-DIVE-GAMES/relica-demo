@@ -96,25 +96,34 @@
   // D-pad: slide-able, 8-way, held while touched.
   var dp = document.getElementById('dpad'), dTouch = null;
   var arrows = { up: dp.querySelector('.u'), down: dp.querySelector('.d'), left: dp.querySelector('.l'), right: dp.querySelector('.r') };
+  // Sectors 0..7 clockwise from right (0 = right, 2 = down). Straight directions are wide (±28°) and diagonals narrow,
+  // and the held sector sticks for 10° past its edge, so a thumb resting on "right" never flickers into right+down
+  // (in the cross-shaped battle menu a stray down jumped the cursor back to the centre).
+  var sec = -1, SECT = [['right'], ['right', 'down'], ['down'], ['down', 'left'], ['left'], ['left', 'up'], ['up'], ['up', 'right']];
+  function half(s) { return s % 2 ? 17 : 28; }
+  function dist(a, s) { return Math.abs(((a - s * 45) % 360 + 540) % 360 - 180); }
   function dir(x, y) {
     var r = dp.getBoundingClientRect(), dx = x - (r.left + r.width / 2), dy = y - (r.top + r.height / 2);
     var on = { up: false, down: false, left: false, right: false };
-    if (Math.hypot(dx, dy) > 14) {
+    if (Math.hypot(dx, dy) > 16) {
       var a = Math.atan2(dy, dx) * 180 / Math.PI; // 0 = right, 90 = down
-      if (a > -67.5 && a < 67.5) on.right = true; if (a > 112.5 || a < -112.5) on.left = true;
-      if (a > 22.5 && a < 157.5) on.down = true; if (a < -22.5 && a > -157.5) on.up = true;
-    }
+      if (sec < 0 || dist(a, sec) > half(sec) + 10) {
+        var c = (Math.round(a / 90) * 2 + 8) % 8; // nearest straight direction
+        sec = dist(a, c) <= 28 ? c : (Math.round(a / 45) + 8) % 8;
+      }
+      SECT[sec].forEach(function (n) { on[n] = true; });
+    } else sec = -1;
     for (var n in on) { key(n, on[n]); arrows[n].classList.toggle('on', on[n]); }
   }
   function find(list) { for (var t of list) if (t.identifier === dTouch) return t; return null; }
   dp.addEventListener('touchstart', function (e) { e.preventDefault(); var t = e.changedTouches[0]; dTouch = t.identifier; dir(t.clientX, t.clientY); }, { passive: false });
   dp.addEventListener('touchmove', function (e) { e.preventDefault(); var t = find(e.changedTouches); if (t) dir(t.clientX, t.clientY); }, { passive: false });
-  function dEnd(e) { e.preventDefault(); if (find(e.changedTouches)) { dTouch = null; dir(0, 0); for (var n in arrows) { key(n, false); arrows[n].classList.remove('on'); } } }
+  function dEnd(e) { e.preventDefault(); if (find(e.changedTouches)) { dTouch = null; sec = -1; for (var n in arrows) { key(n, false); arrows[n].classList.remove('on'); } } }
   dp.addEventListener('touchend', dEnd, { passive: false }); dp.addEventListener('touchcancel', dEnd, { passive: false });
   var mouseDp = false;
   dp.addEventListener('mousedown', function (e) { mouseDp = true; dir(e.clientX, e.clientY); });
   window.addEventListener('mousemove', function (e) { if (mouseDp) dir(e.clientX, e.clientY); });
-  window.addEventListener('mouseup', function () { if (mouseDp) { mouseDp = false; for (var n in arrows) { key(n, false); arrows[n].classList.remove('on'); } } });
+  window.addEventListener('mouseup', function () { if (mouseDp) { mouseDp = false; sec = -1; for (var n in arrows) { key(n, false); arrows[n].classList.remove('on'); } } });
   window.addEventListener('blur', function () { for (var n in held) key(n, false); });
   document.addEventListener('gesturestart', function (e) { e.preventDefault(); });
 
@@ -136,7 +145,7 @@
   s.src = "Build/build.loader.js";
   s.onload = function () {
     createUnityInstance(canvas, config, function (p) { document.getElementById('fill').style.width = (100 * p) + '%'; })
-      .then(function (u) { window.U = u; document.getElementById("loading").style.display = 'none'; })
+      .then(function () { document.getElementById('loading').style.display = 'none'; })
       .catch(function (m) { document.getElementById('note').textContent = '起動できませんでした: ' + m; });
   };
   document.body.appendChild(s);
