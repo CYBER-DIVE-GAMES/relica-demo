@@ -201,6 +201,7 @@ sprites/enemies.png
 sprites/fish/fish_atlas.png
 sprites/fish/fish_atlas.txt
 sprites/fish/fish_atlas_sil.png
+sprites/foe/_orig.txt
 sprites/foe/bandit.png
 sprites/foe/bandit_lookout.png
 sprites/foe/boss_01_grave.png
@@ -288,6 +289,7 @@ sprites/foe/seres_last.png
 sprites/foe/seres_relay.png
 sprites/foe/survey_soldier.png
 sprites/foe/tree_sentinel.png
+sprites/foe12/_orig.txt
 sprites/foe12/bandit.png
 sprites/foe12/bandit_lookout.png
 sprites/foe12/boss_01_grave.png
@@ -541,6 +543,7 @@ sprites/v3/visual_slime_blue.json
 sprites/v3/visual_slime_green.json
 sprites/v3/visual_slime_red.json
 sprites/walk/README_child_boy.txt
+sprites/walk/_orig.txt
 sprites/walk/albert.png
 sprites/walk/bandit.png
 sprites/walk/bern.png

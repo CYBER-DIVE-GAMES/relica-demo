@@ -1,0 +1,4 @@
+seres_avatar 1536
+seres_core 1536
+seres_eden 1536
+seres_last 1536
