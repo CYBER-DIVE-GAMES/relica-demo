@@ -3,6 +3,7 @@ boss-atlas.png
 boss.png
 chapter-npcs.png
 chapter-terrain.png
+demo.flag
 enemies.png
 environment.png
 gald.png

@@ -136,7 +136,7 @@
   s.src = "Build/build.loader.js";
   s.onload = function () {
     createUnityInstance(canvas, config, function (p) { document.getElementById('fill').style.width = (100 * p) + '%'; })
-      .then(function () { document.getElementById('loading').style.display = 'none'; })
+      .then(function (u) { window.U = u; document.getElementById("loading").style.display = 'none'; })
       .catch(function (m) { document.getElementById('note').textContent = '起動できませんでした: ' + m; });
   };
   document.body.appendChild(s);
