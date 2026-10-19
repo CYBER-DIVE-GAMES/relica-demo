@@ -346,6 +346,7 @@ sprites/sit/noa.png
 sprites/sit/rain.png
 sprites/sit/rain_adult.png
 sprites/stand/rain.png
+sprites/stand/rain_adult.png
 sprites/v3/bern.json
 sprites/v3/boss_01_grave.json
 sprites/v3/boss_02_gradon.json
