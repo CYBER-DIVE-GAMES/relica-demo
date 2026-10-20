@@ -159,6 +159,7 @@ sprites/battle/rain_adult_back.png
 sprites/battle/rain_adult_down.png
 sprites/battle/rain_adult_win.png
 sprites/battle/rain_back.png
+sprites/battle/rain_back_moves.png
 sprites/battle/rain_down.png
 sprites/battle/rain_moves.png
 sprites/battle/relica_abyss.png
