@@ -336,6 +336,7 @@ sprites/rayn-ch1.png
 sprites/run/albert.png
 sprites/run/knight.png
 sprites/run/rain.png
+sprites/run/rain_adult.png
 sprites/seres-glow.png
 sprites/sit/elena.png
 sprites/sit/gardo.png
