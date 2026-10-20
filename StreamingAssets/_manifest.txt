@@ -581,6 +581,7 @@ sprites/walk/townsfolk_m.png
 sprites/walk/traveler.png
 sprites/walk/vares.png
 sprites/walk/worker.png
+story/grave_night.txt
 textures/battle_bg/cliff_sea_wall.png
 textures/battle_bg/forest_deep_trunks.png
 textures/battle_bg/lab_floor.png
@@ -737,6 +738,14 @@ vfx/fx_atlas.png
 village.png
 vision/act1_end_1.png
 vision/act1_end_2.png
+vision/grave_1.png
+vision/grave_2.png
+vision/grave_3.png
+vision/grave_4.png
+vision/grave_5.png
+vision/grave_6.png
+vision/grave_7.png
+vision/grave_8.png
 vision/mem_cape_1.png
 vision/mem_cape_2.png
 vision/mem_cape_3.png
