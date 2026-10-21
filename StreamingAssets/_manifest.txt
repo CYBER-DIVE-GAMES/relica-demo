@@ -578,6 +578,7 @@ sprites/walk/priest.png
 sprites/walk/rain.png
 sprites/walk/rain_adult.png
 sprites/walk/rain_bed.png
+sprites/walk/rain_sleep.png
 sprites/walk/researcher.png
 sprites/walk/survey.png
 sprites/walk/townsfolk_f.png
