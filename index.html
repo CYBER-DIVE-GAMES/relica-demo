@@ -129,9 +129,9 @@
 
   var config = {
     arguments: [],
-    dataUrl: "Build/d89bcc23bad37df3e105553d3b8c3198.data.unityweb",
+    dataUrl: "Build/97af1a91678b9d643e75f3d67a8f3122.data.unityweb",
     frameworkUrl: "Build/545d074a6cb463c9de279422ee0736fe.framework.js.unityweb",
-    codeUrl: "Build/bf0e9652b2074e27ac6a088d33538bdb.wasm.unityweb",
+    codeUrl: "Build/56be4db63abfbfe8349d31c7ac570b10.wasm.unityweb",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "DIP Games",
     productName: "RELICA",
@@ -142,7 +142,7 @@
   if (touch) config.devicePixelRatio = Math.min(window.devicePixelRatio || 1, 1.5);
 
   var s = document.createElement('script');
-  s.src = "Build/3b748230e3a1b56cf2d5abd5173edcca.loader.js";
+  s.src = "Build/38f05b060c64715475c4ceb25e95af15.loader.js";
   s.onload = function () {
     createUnityInstance(canvas, config, function (p) { document.getElementById('fill').style.width = (100 * p) + '%'; })
       .then(function () { document.getElementById('loading').style.display = 'none'; })
