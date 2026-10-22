@@ -204,6 +204,14 @@ sprites/boss-atlas.png
 sprites/cast-act24.png
 sprites/chapter-npcs.png
 sprites/enemies.png
+sprites/face/elena.png
+sprites/face/gardo.png
+sprites/face/gardo_adult.png
+sprites/face/mia.png
+sprites/face/mia_adult.png
+sprites/face/noa.png
+sprites/face/rain.png
+sprites/face/rain_adult.png
 sprites/fish/fish_atlas.png
 sprites/fish/fish_atlas.txt
 sprites/fish/fish_atlas_sil.png
