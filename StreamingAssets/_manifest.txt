@@ -226,6 +226,7 @@ sprites/enemies.png
 sprites/face/elena.png
 sprites/face/gardo.png
 sprites/face/gardo_adult.png
+sprites/face/gardo_beast_adult.png
 sprites/face/mia.png
 sprites/face/mia_adult.png
 sprites/face/noa.png
